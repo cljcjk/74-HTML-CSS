@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head><!-- 这是头标签 -->
+		<meta charset="UTF-8" /> <!-- 设置编码字符 -->
+		<meta name="keywords" content="关键词" /><!--网站的关键词-->
+		<meta name="description" content="描述" /><!--网站的描述 -->
+		<title>青龙</title>
+		<style type="text/css">
+		
+			div{
+				position: relative;
+				width: 200px;
+				height: 200px;
+				background-color: orange;
+			
+			}
+		
+			
+			/* div::before{
+				content: "";
+			} */
+			
+			/* div::after{
+				content: "";
+				position: absolute;
+				top: 200px;
+				left: 200px;
+				display: inline-block;
+				width: 100px;
+				height: 100px;
+				background: orangered url(./images/css-masking.png) no-repeat 0/100px 100px;
+			} */
+
+			/* a::after{
+			
+				content: attr( href );
+			
+			} */
+
+			span:before{
+				content: attr( data-name );
+				background-color: aqua;
+			
+			}
+
+			span:after{
+				content: "";
+			
+			}
+
+			
+		
+			
+
+		</style>
+	</head>
+	<body>
+			<!-- !important       infinity
+			行间样式	     1000
+			ID	             100
+			class|属性|伪类  10
+			标签|伪元素       1
+			通配符			   0 -->
+
+<!-- 
+		<div>
+			
+			
+		
+		</div> -->
+
+
+		<span data-name="青龙同学">请登录！</span>
+
+		<!-- <a href="http://www.taobao.com">淘宝</a> -->
+
+
+	</body>
+</html>

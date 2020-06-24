@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+        div{
+            float: left;
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            background-color: yellow;
+        }
+
+        .box1::after,
+        .box2::after{
+            content: "";
+            position: absolute;
+            top:20px;
+            right: -40px;
+            width: 0;
+            height: 0;
+            border: 20px solid transparent;
+            border-left-color: yellow;
+        }
+
+        .box1{
+            box-shadow: 4px 4px 4px red;
+        }
+
+        .box2{
+            /* box-shadow: 4px 4px 4px red; */
+
+            filter: drop-shadow(4px 4px 4px red);
+        }
+
+        .box3,
+        .box4{
+            background-color: transparent;
+            border: 20px dotted yellow;
+        }
+
+        .box3{
+            box-shadow: 4px 4px 4px red;
+        }
+
+        .box4{
+            filter: drop-shadow(4px 4px red);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+</body>
+</html>

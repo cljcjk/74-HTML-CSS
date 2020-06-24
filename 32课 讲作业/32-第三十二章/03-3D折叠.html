@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+        *{margin: 0;padding: 0;}
+        a{text-decoration: none;color: #424242}
+        body{
+            background-color: #b1b1b1;
+        }
+        .wrapper{
+            position: relative;
+            width: 250px;
+            margin: 100px auto 0;
+            z-index: 10px;
+
+            perspective: 1000px; 
+        }
+
+        .wrapper:hover .nav{
+            transform: rotateX(0);
+        }
+
+        .wrapper .title{
+            display: block;
+            height: 36px;
+
+            text-align: center;
+            line-height: 36px;
+            font-weight: bold;
+            color: white;
+            background-color: #069;
+
+            border-radius: 10px 10px 0 0;
+        }
+
+        .wrapper .nav{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 230px;
+            padding: 10px;
+            z-index: -1;
+            
+            
+            transform-origin: top;
+            transform-style: preserve-3d;
+        }
+        .wrapper .nav img{
+            float: left;
+            padding: 10px 10px 10px 0;
+            width: 50px;
+            height: 50px;
+        }
+        .wrapper .nav a {
+            display: block;
+            font-size: 12px;
+        }
+        .wrapper .nav a span{
+            display: block;
+            font-weight: bold;
+            font-size: 14px;
+            color: #069;
+        }
+
+        .wrapper .nav1{
+            transition: 1s;
+            transform: rotateX(-90deg);
+            background-color: #ddd;
+        }
+        .wrapper .nav3,.wrapper .nav5{
+            transition: 1.8s;
+            transform: rotateX(-180deg);
+
+            background-color: #ddd;
+        }
+        .wrapper .nav2,.wrapper .nav4{
+            transition: 1.8s;
+            transform: rotateX(180deg);
+
+            background-color: #eee;
+        }
+
+        .wrapper .nav5{
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 10px 15px -15px black;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <a class="title" href="">3D折叠菜单导航</a>
+
+
+        <div class="nav nav1">
+            <img src="./img/html.png" alt="">
+            <a href=""><span>网页特效库</span>专注于HTML5、CSS3、js、jQuery、手机移动端等网页特效的手机与分享。</a>
+
+            <div class="nav nav2">
+                <img src="./img/html1.png" alt="">
+                <a href=""><span>jQuery导航菜单</span>导航栏是指位于页眉区域的，在页眉横幅图片上边或下边的一排水平导航按钮......</a>
+
+                <div class="nav nav3">
+                    <img src="./img/html2.png" alt="">
+                    <a href=""><span>瀑布流</span>瀑布流，又称瀑布流式布局。是比较流行的一种网站页面布局，视觉表现为参差不......</a>
+
+                    <div class="nav nav4">
+                        <img src="./img/html3.png" alt="">
+                        <a href=""><span>响应式</span>响应式布局是Ethan Marcotte在2010年5月份提出的一个概念......</a>
+
+                        <div class="nav nav5">
+                            <img src="./img/html4.png" alt="">
+                            <a href=""><span>视差滚动</span>视差滚动(Parallax Scrolling)是指让......</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

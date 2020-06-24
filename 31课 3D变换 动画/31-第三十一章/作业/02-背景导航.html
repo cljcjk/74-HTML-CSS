@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    
+        .wrap{
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+        .wrap .box{
+            float: left;
+            width: 120px;
+            height: 180px;
+        }
+        .wrap .box1{
+            background-color: rgba(233, 230, 62, 0.4);
+        }
+        .wrap .box2{
+            background-color: rgba(130, 233, 62, 0.4);
+        }
+        .wrap .box3{
+            background-color: rgba(62, 185, 233, 0.4);
+        }
+        .wrap .box4{
+            background-color: rgba(62, 73, 233, 0.4);
+        }
+        .wrap .box5{
+            background-color: rgba(233, 62, 196, 0.4);
+        }
+
+        
+        .wrap .box2:hover ~ .pm{
+            transform: translate(120px, 0)            
+        }
+        .wrap .box3:hover ~ .pm{
+            transform: translate(240px, 0)            
+        }
+        .wrap .box4:hover ~ .pm{
+            transform: translate(360px, 0)
+        }
+        .wrap .box5:hover ~ .pm{
+            transform: translate(480px, 0)            
+        }
+
+        .wrap .pm{
+            position: absolute;
+            left: 0;
+            top: -10px;
+            z-index: -1;
+            width: 120px;
+            height: 200px;
+            background-color: black;
+
+            transition: transform .6s;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="wrap">
+
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+
+        <div class="pm"></div>
+
+    </div>
+</body>
+</html>

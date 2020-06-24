@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        ul{
+            float: left;
+        }
+
+        /* li[class]{
+            background-color: yellowgreen;
+        } */
+        /* li[class="list-1 List-1"]{
+            background-color: yellowgreen;
+        } */
+        /* li[class="list-1"]{
+            background-color: yellowgreen;
+        } */
+
+
+        /* ============================= */
+
+        /* li[class~="list-2"]{
+            background-color: yellowgreen;
+        } */
+        /* li[class~="List6"]{
+            background-color: yellowgreen;
+        } */
+
+
+        /* ============================= */
+
+        /* a[href^="http"]{
+            background-color: orange;
+        }
+        a[href^="https"]{
+            background-color: orangered;
+        }
+        a[href^="javascript"]{
+            background-color: orangered;
+        } */
+
+        /* ============================= */
+
+        /* a[href$="png"]{
+            background-color: yellowgreen;
+        }
+        a[href$="jpg"]{
+            background-color: rgb(50, 182, 205);
+        }
+        a[href$="gif"]{
+            background-color: rgb(205, 125, 50);
+        } */
+
+        /* ============================= */
+
+        /* li[lang|="zh"]{
+            background-color: yellowgreen;
+        } */
+
+
+        /* li[class|="list"]{
+            background-color: yellowgreen;
+        } */
+        /* li[class|="List"]{
+            background-color: yellowgreen;
+        } */
+
+        /* ============================= */
+        
+        /* li[class*="8"]{
+            background-color: yellowgreen;
+        } */
+        li[class*="1"]{
+            background-color: yellowgreen;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <div>
+        <ul>
+            <li class="list-1 List1">001</li>
+            <li class="list-2 List-2">002</li>
+            <li class="list-3 List3">003</li>
+            <li class="list-4 List4">004</li>
+            <li class="list-5 List5">005</li>
+            <li class="list-6 List6" lang="zh-cn">006</li>
+            <li class="list-7 List7">007</li>
+            <li class="list-8 List8">008</li>
+            <li class="list-9 List9">009</li>
+            <li class="list-10 List10">010</li>
+        </ul>
+        <ul>
+            <li class="list-1 List1">001</li>
+            <li class="list-2 List-2">002</li>
+            <li class="list-3 List3">003</li>
+            <li class="list-4 List4">004</li>
+            <li class="list-5 List5">005</li>
+            <li class="list-6 List6" lang="zh">006</li>
+            <li class="list-7 List7">007</li>
+            <li class="list-8 List8">008</li>
+            <li class="list-9 List9">009</li>
+            <li class="list-10 List10">010</li>
+        </ul>
+        <ul>
+            <li class="list-1 List1">001</li>
+            <li class="list-2 List-2">002</li>
+            <li class="list-3 List3">003</li>
+            <li class="list-4 List4">004</li>
+            <li class="list-5 List5">005</li>
+            <li class="list-6 List6" lang="zh">006</li>
+            <li class="list-7 List7">007</li>
+            <li class="list-8 List8">008</li>
+            <li class="list-9 List9">009</li>
+            <li class="list-10 List10">010</li>
+        </ul>
+        <ul>
+            <li class="list-1 List1">001</li>
+            <li class="list-2 List-2">002</li>
+            <li class="list-3 List3">003</li>
+            <li class="list-4 List4">004</li>
+            <li class="list-5 List5">005</li>
+            <li class="list-6 List6" lang="zh">006</li>
+            <li class="list-7 List7">007</li>
+            <li class="list-8 List8">008</li>
+            <li class="list-9 List9">009</li>
+            <li class="list-10 List10">010</li>
+        </ul>
+        <ul>
+            <li class="list-1 List1">001</li>
+            <li class="list-2 List-2">002</li>
+            <li class="list-3 List3">003</li>
+            <li class="list-4 List4">004</li>
+            <li class="list-5 List5">005</li>
+            <li class="list-6 List6" lang="zh-cn">006</li>
+            <li class="list-7 List7">007</li>
+            <li class="list-8 List8">008</li>
+            <li class="list-9 List9">009</li>
+            <li class="list-10 List10">010</li>
+        </ul>
+    </div>
+    
+        <a href="https://www.baidu.com">百度</a> <br>
+        <a href="http://www.taobao.com">淘宝</a> <br>
+        <a href="http://www.tmall.com">天猫</a> <br>
+        <a href="javascript:void(0)">javascript</a> <br><br>
+
+        <a href="https://www.baidu.com/1.png">百度图片</a> <br>
+        <a href="http://www.taobao.com/1.jpg">淘宝图片</a> <br>
+        <a href="http://www.tmall.com/1.gif">天猫图片</a> <br>
+
+        
+    
+</body>
+</html>

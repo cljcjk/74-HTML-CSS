@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+        img{display: block}
+        div{
+            width: 200px;
+            margin: 50px auto;
+            /* border: 1px solid orange; */
+        }
+
+        div::after{
+            content: "";
+            display: block;
+            margin-top: 10px;
+            /* border: 1px solid red; */
+            height: 348px;
+
+            background: -moz-element( #box ) no-repeat;
+
+            transform: rotateX(180deg);
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="box">
+        <img src="./1.png" alt="" width="200">
+    </div>
+</body>
+</html>

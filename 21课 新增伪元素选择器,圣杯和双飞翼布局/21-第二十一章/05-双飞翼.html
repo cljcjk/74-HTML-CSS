@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper{
+            /* height: 600px; */
+            margin: auto;
+            /* width: 800px; */
+            max-width: 1200px;
+            overflow: hidden;
+            border: 1px solid black;
+        }
+        .wrapper:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        .left, .right, .middle{
+            float: left;
+            margin-bottom: -9999px;
+            padding-bottom: 9999px;
+        }
+
+        .left{
+            left: -150px;
+            width: 150px;
+            height: 80px;
+            margin-left: -100%;
+            background-color: rgb(161, 233, 28);
+        }
+        .right{
+            right: -120px;
+            width: 120px;
+            height: 80px;
+            margin-left: -120px;
+            background-color: rgb(28, 233, 148);
+        }
+        .middle{
+            width: 100%;
+        }
+
+        .inner{
+            height: 400px;
+            margin-left: 150px;
+            margin-right: 120px;
+            background-color: rgb(241, 32, 231);
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- 等高列 -->
+    <div class="wrapper">
+        <div class="middle">
+            <div class="inner">middle</div>
+        </div>
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div> 
+    
+    
+</body>
+</html>

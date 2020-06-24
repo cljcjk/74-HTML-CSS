@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3D折叠导航栏</title>
+    <style>
+        body,ul,h3,p{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #B1B1B1;
+            perspective: 1000px;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .box{
+            width: 280px;
+            margin: 30px auto 0;
+            transform-style: preserve-3d;
+        }
+       .title{
+           /* position: absolute; */
+           width: 280px;
+           height: 40px;
+           background-color: #069;
+           border-radius: 15px 15px 0px 0px;
+           /* transform: rotateX(-8deg); */
+        }   
+        .title a{
+            display: block;
+            width: 280px;
+            line-height: 40px;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            font-size: 19px;
+            font-weight: bold;
+        }
+        .wrapper ul{
+            transform-style: preserve-3d;
+            transform: rotateX(20deg);
+            transform-origin: center top;
+            transition: transform 3s 1s;
+        }
+        .wrapper ul li{
+            /* position: relative; */
+            overflow: hidden;
+            width: 280px;
+            height: 110px;
+            background-color: #DCDCDC;
+            margin: auto;
+            transition: transform 2s;
+        }
+        .wrapper ul li span{
+            float: left;
+            display: block;
+            width: 70px;
+            height: 70px;
+            margin: 20px 0 0 5px;
+            background: url("./images/html9.png") no-repeat center/90%;
+        }
+        .wrapper ul li:nth-child(2) span{
+            background: url("./images/html1.png") no-repeat center/90%;
+        }
+        .wrapper ul li:nth-child(3) span{
+            background: url("./images/html2.png") no-repeat center/90%;
+        }
+        .wrapper ul li:nth-child(4) span{
+            background: url("./images/html3.png") no-repeat center/90%;
+        }
+        .wrapper ul li:nth-child(5) span{
+            background: url("./images/html4.png") no-repeat center/90%;
+        }
+        .wrapper ul li div{
+            float: right;
+            width: 190px;
+            height: 110px;
+            margin: 10px 10px 0 0px;
+        }
+        .wrapper ul li div h3{
+            color: #2379A4;
+        }
+        .wrapper ul li div p{
+            font-size: 14px;
+        }
+        .wrapper ul li:nth-child(5){
+            border-radius: 0px 0px 15px 15px;
+        }
+        .wrapper ul li:nth-child(1){
+            transform-origin: center top;
+            transform: translateY(-1px)  rotateX(-124deg);
+            background-color: #DCDCDC;
+        }
+        .wrapper ul li:nth-child(2){
+            transform-origin: center bottom;
+            transform: translateY(-221px)   rotateX(56deg);
+            background-color: #EDEDED;
+        }
+        .wrapper ul li:nth-child(3){
+            transform-origin: center top;
+            transform: translateY(-221px)   rotateX(-124deg);
+            background-color: #DCDCDC;
+        }
+        .wrapper ul li:nth-child(4){
+            transform-origin: center bottom;
+            transform: translateY(-441px)   rotateX(56deg);
+            background-color: #EDEDED;
+        }
+        .wrapper ul li:nth-child(5){
+            transform-origin: center top;
+            transform: translateY(-441px)   rotateX(-124deg);
+            background-color: #DCDCDC;
+        }
+        .title:hover ~.wrapper ul li:nth-child(1){
+            transform-origin: center top;
+            transform: translateY(0px)  rotateX(-30deg);
+        }
+        .title:hover ~.wrapper ul li:nth-child(2){
+            transform-origin: center bottom;
+            transform:  translateY(-17px)  translateZ(-74px) rotateX(-10deg);
+        }
+        .title:hover ~.wrapper ul li:nth-child(3){
+            transform-origin: center top;
+            transform:  translateY(-17px)  translateZ(-73px) rotateX(-10deg);
+        }
+        .title:hover ~.wrapper ul li:nth-child(4){
+            transform-origin: center bottom;
+            transform:  translateY(-21px)  translateZ(-111px) rotateX(-10deg);
+        }
+        .title:hover ~.wrapper ul li:nth-child(5){
+            transform-origin: center top;
+            transform:   translateY(-21px)  translateZ(-111px);
+        }
+        .title:hover ~.wrapper ul{
+            transform:  rotateX(-10deg);
+        }
+        </style>
+</head>
+<body>
+    <div class="box">
+        <div class="title">
+            <a href="#">3D折叠菜单导航</a>    
+        </div>
+        <div class="wrapper">
+            <ul>
+                <li>
+                    <span></span>
+                    <div>
+                        <h3>网页特效库</h3>
+                        <p>专注于HTML5、CSS3、js、jQuery、手机移动端等网页特效的手机与分享。</p>
+                    </div>
+                </li>
+                <li>
+                    <span></span>
+                    <div>
+                        <h3>jQuery导航菜单</h3>
+                        <p>导航栏是指位于页眉区域的,在页眉横幅图片上边或下边的一排水平导航按钮......</p>
+                    </div>
+                </li>
+                <li>
+                    <span></span>
+                    <div>
+                        <h3>瀑布流</h3>
+                        <p>瀑布流,又称瀑布流式布局。是比较流行的一种网站页眉布局,视觉表现为参差不......</p>
+                    </div>
+                </li>
+                <li>
+                    <span></span>
+                    <div>
+                        <h3>响应式</h3>
+                        <p>响应式布局是Ethan Marcotte在2010年5月份提出的一个概念......</p>
+                    </div>
+                </li>
+                <li>
+                    <span></span>
+                    <div>
+                        <h3>视差滚动</h3>
+                        <p>视差滚动(Parallax Scrolling)是指让......</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

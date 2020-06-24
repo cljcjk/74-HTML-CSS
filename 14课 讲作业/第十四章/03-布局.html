@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    
+        .wrapper{
+            width: 800px;
+            margin: 50px auto 0;
+            /* border: 1px solid black; */
+        }
+    
+
+        .wrapper .header{
+            height: 100px;
+            margin-bottom: 12px;
+            background-color: #f00;
+        }
+
+
+
+
+        .wrapper .middle .m-left{
+            float: left;
+            margin-right: 16px;
+        }
+        .wrapper .middle .m-right{
+            float: right;
+        }
+        .wrapper .middle .m-left .m-l-top{
+            width: 624px;
+            height: 100px;
+            margin-bottom: 12px;
+            background-color: blue;
+        }
+        .wrapper .middle .m-left .m-l-bottom .m-l-b-left{
+            float: left;
+            height: 394px;
+            width: 304px;
+            margin-right: 16px;
+            background-color: rgb(144, 18, 228);
+        }
+        .wrapper .middle .m-left .m-l-bottom .m-l-b-right{
+            float: left;
+            height: 394px;
+            width: 304px;
+            background-color: orange;
+        }
+
+
+
+
+
+        .wrapper .middle .m-right{
+            width: 160px;
+            height: 506px;
+            background-color: yellow;
+        }
+
+
+
+
+
+        .wrapper .footer{
+            height: 100px;
+            margin-top: 20px;
+            background-color: #f00;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+
+
+        <div class="header">header</div>
+
+
+
+
+        <div class="middle clearfix">
+            <div class="m-left">
+                <div class="m-l-top">m-l-top</div>
+                <div class="m-l-bottom clearfix">
+                    <div class="m-l-b-left"></div>
+                    <div class="m-l-b-right"></div>
+                </div>
+            </div>
+            <div class="m-right">m-right</div>
+        </div>
+
+
+
+        
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>

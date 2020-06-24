@@ -1,0 +1,61 @@
+body,ul{
+    margin: 0;
+    padding: 0;
+}
+ul{list-style-type: none;}
+.wrap{
+    position: relative;
+    width: 500px;
+    margin: 100px auto 0;
+}
+.wrap img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 500px;
+    height: 300px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.wrap input{
+    display: none;
+}
+.wrap label{
+    position: absolute;
+    top: 270px;
+    left: 0px;
+    display: block;
+    width: 11px;
+    height: 11px;
+    /* background-color: #fff; */
+    border: 5px solid orange;
+    border-radius: 21px;
+    z-index: 1;
+    margin-left: 165px;
+    transition: background-color 1s;
+}
+.wrap label[for="pic2"]{
+    left: 25px;
+}
+.wrap label[for="pic3"]{
+    left: 50px;
+}
+.wrap label[for="pic4"]{
+    left: 75px;
+}
+.wrap label[for="pic5"]{
+    left: 100px;
+}
+.wrap label[for="pic6"]{
+    left: 125px;
+}
+.wrap label[for="pic7"]{
+    left: 150px;
+}
+input:checked+label{
+    background-color: brown;
+}
+input:checked~img{
+    opacity: 1;
+}

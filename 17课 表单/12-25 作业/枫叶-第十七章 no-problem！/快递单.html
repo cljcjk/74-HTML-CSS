@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>快递单</title>
+    <link rel="stylesheet" href="css/快递单.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h3>增加快递信息</h3>
+        <form  action="#">
+            <fieldset class="form1">
+                <legend>发货单</legend>
+                <table border="0">
+                    <tr>
+                        <td>发货人&nbsp;&nbsp;:</td>
+                        <td><input type="text"></td>
+                        <td>地址&nbsp;&nbsp;:</td>
+                        <td><input type="url"></td>                    
+                    </tr>
+                    <tr>
+                        <td>电话&nbsp;&nbsp;:</td>
+                        <td><input type="tel"></td>
+                        <td>邮编&nbsp;&nbsp;:</td>
+                        <td><input type="email"></td>                
+                    </tr>
+                </table>
+            </fieldset> 
+                <fieldset class="form2">
+                    <legend>收货单</legend>
+                    <table border="0">
+                         <tr>
+                            <td>收货人&nbsp;&nbsp;:</td>
+                            <td><input type="text" class=“box”></td>
+                            <td>地址&nbsp;&nbsp;:</td>
+                            <td><input type="url" class=“box”></td>                    
+                        </tr>
+                        <tr>
+                            <td>电话&nbsp;&nbsp;:</td>
+                            <td><input type="tel" class=“box”></td>
+                            <td>邮编&nbsp;&nbsp;:</td>
+                            <td><input type="email" class=“box”></td>                
+                        </tr>    
+                        <tr>      
+                            <td>地区&nbsp;&nbsp;:</td>   
+                            <td colspan="3">
+                                <select size="1">
+                                    <option selected="selected">北京</option>
+                                    <option selected="selected">江西</option>
+                                    <option selected="selected">湖北</option>
+                                    <option selected="selected">湖南</option>
+                                </select>
+                            </td>                               
+                            <tr>
+                                <td>包装&nbsp;&nbsp;:</td>
+                                <td colspan="3">
+                                        <input type="checkbox" name="method">纸箱
+                                        <input type="checkbox" name="method">木箱
+                                        <input type="checkbox" name="method">快递袋
+                                        <input type="checkbox" name="method">其他
+                                </td>    
+                            </tr>
+                            <tr>
+                                <td>付款方式&nbsp;&nbsp;:</td>
+                                <td colspan="3">
+                                    <input type="radio" name="method">现金
+                                    <input type="radio" name="method">支付宝
+                                    <input type="radio" name="method">网银
+                                    <input type="radio" name="method">ATM
+                                </td>    
+                            </tr>
+                        </table>
+                    </fieldset>  
+            <fieldset class="form3">
+                <legend>货物信息</legend>
+                <table border="0">
+                    <tr>
+                        <td >货物名称&nbsp;&nbsp;:</td>
+                        <td colspan="5"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>数量&nbsp;&nbsp;:</td>
+                        <td><input type="number"></td>
+                        <td>重量&nbsp;&nbsp;:</td>
+                        <td><input type="number"></td>
+                        <td>发货时间&nbsp;&nbsp;:</td>
+                        <td><input type="date"></td>    
+                    </tr>
+                </table>
+            </fieldset>
+            <div class="contain">
+                <input type="submit">
+                <input type="reset">
+                <input type="file"> 
+            </div>
+        </form>  
+    </div>
+</body>
+</html>

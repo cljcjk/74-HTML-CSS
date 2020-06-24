@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        .wrap{
+            width: 200px;
+            height: 200px;
+            margin: 200px auto;
+            border: 2px solid #000;
+        }
+    
+        .wrap div{
+            width: 200px;
+            height: 200px;
+        }
+
+        .wrap .box1{
+            background-color: aqua;
+
+            transition: transform 1s;
+        }
+
+        .wrap1:hover .box1{
+            transform: translate(100px, 100px);
+        }
+
+
+        .wrap .box2{
+            background-color: rgb(115, 255, 0);
+
+            transition: transform 5s;
+
+            transform-origin: left bottom;
+        }
+
+        .wrap2:hover .box2{
+            transform: rotatey( 180deg );
+            /* transform: rotate( 1turn ); */
+            /* transform: rotate( 200grad ); */
+            /* transform: rotate( 6.2832rad ); */
+
+        }
+
+        
+
+
+        .wrap3 .box3{
+            background: url(./images/4.jpg) no-repeat 0/200px 200px;
+
+            transition: transform 1s;
+
+            /* transform-origin: left; */
+        }
+
+        .wrap3:hover .box3{
+            transform: scale( .8 );
+            /* transform: scale( 1.8, 1.2 ); */
+
+            /* transform: scale( -1 ); */
+            /* transform: scale( -1, 1 ); */
+            /* transform: scale( 1, -1 ); */
+            /* transform: scale( -1.4, -1.4 ); */
+        }
+
+        .wrap4{
+            width: 400px;
+            transform: rotate(-45deg);
+        }
+        .wrap4 div{
+            float: left;
+            transition: transform 1s;
+        }
+        .wrap4 .box4{
+            background-color: orangered;
+            transform-origin: bottom;
+        }
+        .wrap4 .box4-1{
+            background-color: red;
+            transform-origin: right;
+        }
+
+        .wrap4:hover .box4{
+            transform:skewX( -45deg );
+            
+        }
+
+        .wrap4:hover .box4-1{
+            transform:skewY( -45deg );
+            
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div class="wrap1 wrap">
+        <div class="box1">translate</div>
+    </div>
+
+    <div class="wrap2 wrap">
+        <div class="box2">rotate</div>
+    </div>
+
+    <div class="wrap3 wrap">
+        <div class="box3">scale</div>
+    </div>
+
+    <div class="wrap4 wrap">
+        <div class="box4">4</div>
+        <div class="box4-1">4-1</div>
+    </div>
+
+    <div class="wrap5 wrap">
+        <div class="box5"></div>
+    </div>
+</body>
+</html>

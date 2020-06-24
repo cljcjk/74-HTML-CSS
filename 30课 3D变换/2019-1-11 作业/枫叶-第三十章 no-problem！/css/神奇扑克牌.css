@@ -1,0 +1,101 @@
+body,ul{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+}
+.wrapper{
+    position: relative;
+    width: 192px;
+    height: 291px;
+    margin: 50px auto 0;
+}
+.wrapper ul li{
+    position: absolute; 
+    top: 2px;
+    left: 2px;
+    width: 188px;
+    height: 287px;
+    border: 2px solid  greenyellow;
+    background: url(../images/poker.png); 
+    background-size: 3550px;
+    background-position: -326px -160px; 
+    transform-origin: 89px 287px; 
+    transition: transform 2s;
+}
+.wrapper ul li:nth-child(2){
+    background-position: -117px -160px;
+}
+.wrapper ul li:nth-child(3){
+    background-position: 882px -160px;
+}
+.wrapper ul li:nth-child(4){
+    background-position: 1100px -160px;
+}
+.wrapper ul li:nth-child(5){
+    background-position: 1324px -160px;
+}
+.wrapper ul li:nth-child(6){
+    background-position: 1546px -160px;
+}
+.wrapper ul li:nth-child(7){
+    background-position: 1755px -160px;
+}
+.wrapper ul li:nth-child(8){
+    background-position: 1965px -160px;
+}
+.wrapper ul li:nth-child(9){
+    background-position: 2175px -160px;
+}
+.wrapper ul li:nth-child(10){
+    background-position: 2806px -160px;
+}
+.wrapper ul li:nth-child(11){
+    background-position: 2385px -160px;
+}
+.wrapper ul li:nth-child(12){
+    background-position: 2594px -160px;
+}
+.wrapper ul li:nth-child(13){
+    background-position: 3014px -160px;
+}
+.wrapper:hover ul li:nth-child(1){
+    transform: rotate(-90deg) scale(1,-1);
+}
+.wrapper:hover ul li:nth-child(2){
+    transform: rotate(-75deg) scale(1,-1);
+}
+.wrapper:hover ul li:nth-child(3){
+    transform: rotate(-60deg) scale(1,-1);
+}
+.wrapper:hover ul li:nth-child(4){
+    transform: rotate(-45deg) scale(1,-1);
+}
+.wrapper:hover ul li:nth-child(5){
+    transform: rotate(-30deg) scale(1,-1);
+}
+.wrapper:hover ul li:nth-child(6){
+    transform: rotate(-15deg) scale(1,-1);
+}
+.wrapper:hover ul li:nth-child(7){
+    transform: rotate(0deg) scale(1,-1);
+}
+.wrapper:hover ul li:nth-child(8){
+    transform: rotate(15deg) scale(1,-1);
+}
+.wrapper:hover ul li:nth-child(9){
+    transform: rotate(30deg) scale(1,-1);
+}
+.wrapper:hover ul li:nth-child(10){
+    transform: rotate(45deg) scale(1,-1);
+}
+.wrapper:hover ul li:nth-child(11){
+    transform: rotate(60deg) scale(1,-1);
+}
+.wrapper:hover ul li:nth-child(12){
+    transform: rotate(75deg) scale(1,-1);
+}
+.wrapper:hover ul li:nth-child(13){
+    transform: rotate(90deg) scale(1,-1);
+}

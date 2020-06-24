@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        *{margin: 0;padding: 0;}
+        a{text-decoration: none; color: #000}
+    
+        .flex{
+
+            display: flex;
+
+            max-width: 800px;
+            width: 100%;
+            height: 100px;
+            margin: 100px auto;
+            border: 2px solid #000;
+        }
+
+        .flex a{
+
+            flex-grow: 2;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: rgba(0, 0, 0, .2);
+        }
+
+        .flex a.user{
+            flex-grow: 1;
+            background-color: rgba(0, 0, 0, .4);
+        }
+
+        div.min{
+            min-width: 600px;
+            width: 100%;
+            height: 100px;
+            margin: auto;
+            background-color: red;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <a href=""><span>首页</span></a>
+        <a href=""><span>课程</span></a>
+        <a href=""><span>视频</span></a>
+        <a href=""><span>代码</span></a>
+        <a href="" class="user"><span>登录</span></a>
+        <a href="" class="user"><span>注册</span></a>
+    </div>
+
+
+    <div class="min"></div>
+</body>
+</html>

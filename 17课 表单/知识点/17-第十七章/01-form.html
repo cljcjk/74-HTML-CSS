@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* form{
+            width: 200px;
+            height: 100px;
+            background-color: aqua;
+        } */
+
+         input[value="ma"] {
+             width: 40px;
+             height: 40px;
+         }
+
+
+        textarea{
+            width: 400px;
+            height: 200px;
+            font-size: 20px;
+            font-weight: bold;
+            resize: none;
+        }
+
+        input[maxlength="6"]{
+            outline: none;
+        }
+
+        legend{
+            margin-left: 100px;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <form action="http://localhost:8880/" method="GET ">
+
+        <!-- 
+            数据的名 username      password   shuiguo
+            数据的值 eyes          123456
+
+         -->
+         <!-- <legend style="background-color: red">输入型控件</legend> -->
+         <fieldset>
+             <legend>输入型控件</legend>
+            
+             账户：<input type="text" name="username" maxlength="6" />  <br>
+             邮箱：<input type="text" name="username" placeholder="请输入邮箱" />  <br>
+             密码：<input type="password" name="password"/>  <br>
+             只读：<input type="text" name="text" value="666666" readonly="readonly" />  <br>
+             禁用：<input type="text" name="text" value="123456" disabled="disabled" />  <br>
+             必填：<input type="password" name="password" required="required" />  <br>
+            
+        </fieldset>
+
+        
+        <fieldset>
+                <legend>选择型控件</legend>
+
+                <h2>你喜欢的水果</h2>
+        
+                <input  type="radio" name="shuiguo" value="xiang" id="r1">
+                <label for="r1">香蕉</label>
+
+                <input type="radio" name="shuiguo" value="liu"  id="r2">
+                <label for="r2">榴莲</label>
+                
+                <input checked="checked" type="radio" name="shuiguo" value="pu"  id="r3">
+                <label for="r3">葡萄</label>
+        
+                <h2>你喜欢明星</h2>
+        
+                马云:<input  checked="checked" type="checkbox" name="mingxing" value="ma">
+                青龙:<input  checked="checked" type="checkbox" name="mingxing" value="qing">
+                苍龙:<input  checked="checked" type="checkbox" name="mingxing" value="cang">
+        
+                <h2>你的部落</h2>
+        
+                <select size="1" name="buluo" id="">
+        
+        
+                    <optgroup label="华北">
+                        <option value="henan">河南</option>
+                        <option value="guizhou">贵州</option>
+                        <option value="zhejiang">浙江</option>
+                    </optgroup>
+        
+                    <optgroup label="华中">
+                        <option value="sichuan" >四川</option>
+                        <option value="sichuan" >云南</option>
+                        <option value="sichuan" >湖南</option>
+                    </optgroup>
+        
+                    <optgroup label="华南">
+                        <option value="sichuan" selected="selected">海南</option>
+                        <option value="sichuan" >广东</option>
+                    </optgroup>
+                </select>
+        </fieldset>
+
+
+        
+
+        <h2>评论</h2>
+        <textarea autofocus="autofocus"  name="text" id="" cols="30" rows="10"></textarea>
+
+
+        <input type="submit" value="登录">
+
+        <button>普通按钮</button>
+
+        <input type="reset">
+
+        <input type="file">
+
+
+
+
+
+    </form>
+
+</body>
+</html>

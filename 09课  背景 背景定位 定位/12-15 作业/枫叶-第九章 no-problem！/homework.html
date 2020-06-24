@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="Keywords" content="前端开发"/>
+        <meta name="Description" content="前端开发"/>
+        <title>枫叶</title>
+    </head>
+	<style>
+	    body,ul{
+		    margin: 0;
+			padding: 0;
+		}
+		body{
+		    height: 1500px;
+		}
+		ul{
+		    list-style: none;
+		}
+		.ring{
+		    position: relative;
+			width: 475px;
+			height: 240px;
+			margin: 100px auto;
+		}
+		.ring ul li{
+		    position: absolute;
+			width: 125px;
+			height: 125px;
+			border-radius: 75px;
+			border: 12.5px solid blue;
+			transition: 30s ease-in-out;
+			transition-delay: 1s;
+		}
+		.ring ul li:nth-child(1){
+		    top: 0px;
+			left: 0px;
+			border-color: #fe0000;
+		}
+		.ring ul li:nth-child(5){
+		    top: 0px;
+			right: 0px;
+			border-color: #9acd32;
+		}
+		.ring ul li:nth-child(4){
+		    bottom: 6px;
+			right: 83px;
+			border-color: #8a2be2;
+		}
+		.ring ul li:nth-child(3){
+		    top: 0px;
+			left: 50%;
+			margin-left: -75px;
+			border-color: #fefe00;
+		}
+		.ring ul li:nth-child(2){
+		    bottom: 6px;
+			left: 83px;
+			border-color: #0000fe;
+		}
+		.ring:hover ul li:nth-child(1){
+		    transform: rotate(36000deg) translatey(35px) translatex(45px);
+		}
+		.ring:hover ul li:nth-child(2){
+		    transform: rotate(-36000deg) translatey(94px) translatex(7px);
+		}
+        .ring:hover ul li:nth-child(3){
+		    transform: rotate(36000deg) translatey(-60px) translatex(0px);
+		}
+		.ring:hover ul li:nth-child(4){
+		    transform:  rotate(-36000deg)translatey(-50px) translatex(40px);
+		}
+		.ring:hover ul li:nth-child(5){
+		    transform:  rotate(36000deg) translatey(178px) translatex(-85px);
+		}
+		.pic{
+		    /* width: 100%; */
+			height: 490px;
+			background-color: #000;
+			padding-top: 65px;
+			font-size: 0;
+			text-align: center;
+		}
+		.box{
+		    position: relative;
+			width: 434px;
+			height: 434px;
+			margin: auto;
+			border-radius: 274px;
+			box-shadow: 0px 0px 100px 20px red;
+			animation: move4 20s;
+			transition: 10s;
+		}
+		@keyframes move4{
+		    0%{
+			    transform: rotate(0deg);
+			}
+			50%{
+			   transform: rotate(1800deg);
+			}
+			100%{
+			   transform: rotate(0deg);
+			}
+		}
+		.pic .left{
+		    position: absolute;
+		    top: 0px;
+		    left: 0px;
+			/* display: inline-block; */
+			width: 217px;
+            height: 434px;
+			border-radius: 217px 0px 0px 217px;
+			background-color: #000;
+			animation: move3 10s;
+		}
+			@keyframes move3{
+		    0%{
+			    top: 0px;
+				left: 0px;
+				transform: rotate(0deg);
+			}
+			50%{
+			    top: -174px;
+				left: -193px;
+				transform: scale(0.2);
+			}
+			100%{
+			    top: 0px;
+				left: 0px;
+				transform: rotate(0deg);
+			}
+		}
+		.pic .right{
+		    position: absolute;
+			top: 0px;
+		    right: 0px;
+			width: 217px;
+            height: 434px;
+			background-color: red;
+			/* display: inline-block; */
+			border-radius: 0px 217px 217px 0px;
+			animation: move2 10s;
+		}
+		@keyframes move2{
+		    0%{
+			    top: 0px;
+				right: 0px;
+				transform: rotate(0deg);
+			}
+			50%{
+			    top: 165px;
+				right: -192px;
+				transform: scale(0.2);
+			}
+			100%{
+			    top: 0px;
+				right: 0px;
+				transform: rotate(0deg);
+			}
+		}
+		.top{
+		    position: absolute;
+		    top: 0px;
+		    left: 33%;
+		    margin-left: -37px;
+			width: 74px; 
+			height: 74px;
+			border-radius: 108.5px;
+			background-color: red;
+			border: 71.5px solid #000;
+			animation: move1 10s;
+		}
+		@keyframes move1{
+		    0%{
+			   top: 0px;
+		       left: 33%;   
+			}
+			50%{
+			   top: -65px;
+		       left: 125%;
+			   transform: scale(0.2);
+			}
+			100%{
+			   top: 0px;
+		       left: 33%; 
+			}
+		}
+		.bottom{
+		    position: absolute;
+		    bottom: 0px;
+		    left: 25%;
+			width: 74px; 
+			height: 74px;
+			border-radius: 108.5px;
+			background-color: #000;
+			border: 71.5px solid red;
+			animation: move 10s;
+		} 
+
+		@keyframes move{
+		    0%{
+			   bottom: 0px;
+		       left: 25%;  
+			}
+			50%{
+			   bottom: -56px;
+		       left: -69%;
+			   transform: scale(0.2);
+			}
+			100%{
+			   bottom: 0px;
+		       left: 25%;
+			}
+		}
+		.box:hover{
+		    transform: rotate(-1980deg) scale(0.2);
+		}
+	</style>
+    <body>
+	    <div class="ring">
+		    <ul>
+		    	<li></li>
+		    	<li></li>
+		    	<li></li>
+		    	<li></li>
+		    	<li></li>
+		    </ul>
+		</div>
+		<div class="pic">
+		    <div class="box">
+			    <div class="left"></div>
+			    <div class="right"></div>
+				<div class="top"></div>
+				<div class="bottom"></div>
+			</div>
+		</div>
+	</body>
+	<script></script>
+</html>

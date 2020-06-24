@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Keywords" content="前端开发">
+        <meta name="Description" content="前端开发">
+        <title>枫叶</title>
+    </head>
+	<style>
+	    body,h2,ul{
+		    margin: 0;
+			padding: 0;
+		}
+		body{
+		    height: 1000px;
+		}
+		ul{
+		    list-style: none;
+		}
+		.homework{
+		    width: 1000px;
+			height: 600px;
+			border: 1px solid red;
+			margin: 10px auto 0;
+		}
+		.homework ul li{
+		    overflow: hidden;
+			border: 1px solid black;
+			width: 500px;
+			white-space: nowrap;
+			text-align: center;
+			margin: 2px auto 0;
+			text-overflow: ellipsis;
+		}
+        .homework ul li:hover{
+		   cursor: url("images/1.ico"),auto;
+		   color: #f99;
+		}
+		h2{
+		    text-align: center;
+		}
+		.homework .pic{
+		    width: 200px;
+			height: 115px;
+			background-color: #9fc;
+			margin: 5px auto 0; 
+			padding-top: 85px; 
+		}
+		.pic1{
+		    width: 0px;
+			height: 0px;
+            border-left:20px solid green;
+			border-bottom:15px solid green;
+            border-top: 15px solid transparent;
+			border-right: 20px solid transparent;
+			margin: auto ;
+			transition: 2s;
+		}
+		.pic:hover{
+		    height: 160px;
+			padding-top: 40px;
+		}
+		.pic:hover .pic1{
+		    border-left:80px solid orange;
+			border-bottom:60px solid orange;
+            border-top: 60px solid transparent;
+			border-right: 80px solid transparent;
+		}
+		.homework p{
+		    background-color: yellow;
+			width: 500px;
+			margin:5px auto 0;
+			text-indent: 2em;
+			font: 18px/1.8em youyuan;
+			transition: 5s;
+		}
+		p:hover{
+		    font: bold oblique 12px/2em kaiti;
+		}
+		span{
+		    display: block;
+			width: 500px;
+			border: 4px double black;
+			margin-top: 10px;
+			margin-left: 247px;
+			color: #639;
+			text-align: center;
+			line-height: 100px;
+			transition: 6s;
+		}
+		span:hover{
+		    border: 4px outset #c6f;
+			text-decoration: line-through;
+			letter-spacing: 1em;
+		}
+	</style>
+    <body>
+	    <h2>第七章 基础属性、边框、鼠标样式</h2>
+		<div class="homework">
+		    <ul>
+		    	<li title="青龙是中国古代神话中的天之四灵之一，源于远古星宿崇拜，是代表太昊与东方七宿的东方之神，于八卦为震、巽，于五行主木，[1]象征四象中的少阳，四季中的春季。[2]">
+				青龙是中国古代神话中的天之四灵之一，源于远古星宿崇拜，是代表太昊与东方七宿的东方之神，于八卦为震、巽，于五行主木，<sup>[1]</sup>象征四象中的少阳，四季中的春季。<sup>[2]</sup>
+				</li>
+		    	<li title="白虎是中国古代神话中的天之四灵之一，源于远古星宿崇拜，是代表少昊与西方七宿的西方之神，于八卦为乾、兑、于五行主金， [1]象征四象中的少阴，四季中的秋季。[2]">
+				白虎是中国古代神话中的天之四灵之一，源于远古星宿崇拜，是代表少昊与西方七宿的西方之神，于八卦为乾、兑、于五行主金， <sup>[1]</sup>象征四象中的少阴，四季中的秋季。<sup>[2]</sup> 
+				</li>
+		    	<li title="朱雀是中国古代神话中的天之四灵之一，源于远古星宿崇拜，是代表炎帝与南方七宿的南方之神，于八卦为离，于五行主火，象征四象中的老阳，四季中的夏季。[1]">
+				朱雀是中国古代神话中的天之四灵之一，源于远古星宿崇拜，是代表炎帝与南方七宿的南方之神，于八卦为离，于五行主火，象征四象中的老阳，四季中的夏季。<sup>[1]</sup> 
+				</li>
+		    	<li title="玄武是中国古代神话中的天之四灵之一，源于远古星宿崇拜，是代表颛顼与北方七宿的北方之神，于八卦为坎，于五行主水，象征四象中老阴，四季中的冬。[1]">
+				玄武是中国古代神话中的天之四灵之一，源于远古星宿崇拜，是代表颛顼与北方七宿的北方之神，于八卦为坎，于五行主水，象征四象中老阴，四季中的冬。<sup>[1]</sup> 
+				</li>
+		    </ul>
+			<div class="pic">
+			    <div class="pic1"></div>
+			</div>
+			<p>
+			四大神兽是古代中国传说的神兽分别为青龙、白虎、朱雀、玄武，属于古代神话和天文学结合的产物。四兽融入了五行和方位，以不同颜色代表：东方青色为木，西方白色为金，南方赤色为火，北方黑色为水，中央黄色为土。另有《淮南子》提到五龙之一的黄龙位居中央，乃四兽之长。
+			</p>
+			<span>
+	        应不同时辰吉凶的一种提法    
+			</span>
+		</div>
+	</body>
+	<script></script>
+</html>

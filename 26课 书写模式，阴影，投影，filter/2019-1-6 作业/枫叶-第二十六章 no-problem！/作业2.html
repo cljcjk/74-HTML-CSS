@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>作业2</title>
+    <style>
+        body,p{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            height: 100%;
+        }
+        .bg{
+            height: 100%;
+            position: relative;
+            background: #000 url("images/14.jpg") no-repeat top center/100% 100%;
+            filter: blur(2px);
+            z-index: -1; 
+        } 
+        .main{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -329px;
+            margin-top: -197px;
+            width: 658px;
+            height: 394px;    
+            background-color: rgba(255, 255, 255,.2);
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0,0.2);
+            box-shadow: 0px 10px 10px -3px rgba(0, 0, 0,0.2);
+               
+        }
+        .main::before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            display: block;
+            margin-left: -300px;
+            margin-top: -175px;
+            width: 600px;  
+            height: 350px;
+            background: url("images/14.jpg") no-repeat center/cover;
+            filter: blur(50px);
+            z-index: -1; 
+        }
+        .main p:nth-child(1){
+            margin: 100px 0px 0 100px;
+            font-family: 楷体;
+            text-indent: 2em;
+            line-height: 40px;
+            font-size: 25px;
+            color: green;
+        }
+        .main p:nth-child(2){
+            font-weight: bold;
+            font-size: 17px;
+            font-style: italic;
+            font-family: 雅黑;
+            color: green;
+            margin: 60px 0px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="main">
+            <P>Web倒是可以给梦想者一个启示,你能够<br />拥有梦想,而且梦想能够实现,网络是离你梦<br />想最近的地方!</P>
+            <P>——著名黑客万维网之父蒂姆·贝纳斯-李(Tim Berners-Lee)</P>
+    </div>
+</body>
+</html>

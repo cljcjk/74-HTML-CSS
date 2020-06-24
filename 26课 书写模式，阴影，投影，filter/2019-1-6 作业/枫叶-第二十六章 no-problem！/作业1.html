@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>作业1</title>
+    <style>
+        body,p{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            height: 100%;
+        }
+        .box{
+            overflow: hidden;
+            height: 100%;
+            position: relative;
+            background-image: url("images/1.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            filter: blur(2px);  
+        }
+        .wrapper{
+            position: absolute;
+            top: 54%;
+            left: 50%;
+            margin-left: -375px;
+            margin-top: -202px;
+            width: 750px;
+            height: 404px;
+            background-color: rgba(255, 255, 255,0);
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255,0.1);
+            box-shadow: 0px 0px 11px 6px rgba(0, 0, 0,.2);
+        }
+        .wrap{
+            position: absolute;
+            top: 19%;
+            left: 50%;
+            margin-left: -400px;
+            margin-top: 0px;
+            width: 800px;
+            height: 450px;
+            background: url("images/1.jpg") no-repeat center/cover;
+            filter: blur(40px);
+        }
+        .wrapper p{
+            margin: 50px 50px 0;
+            font-family: 方正舒体;
+            text-indent: 2em;
+            line-height: 30px;
+            font-size: 18px;
+        }
+        .wrapper p:nth-child(2){
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="wrap"></div>
+    <div class="wrapper">
+        <p>
+            无论现在的你处于什么状态，是时候对自己说：不为模糊不清的未来担忧只<br />为清清楚楚的现在努力。    
+            过去的事，交给岁月去处理；将来的事，留给时间去证明。我们真正要做的，就是牢牢地抓住今天，让今天的自己胜过昨天的
+            自己。努力做一个积极的人。不埋怨谁，不嘲笑谁，也不羡慕谁，阳光下灿烂，风雨中奔跑，做自己的梦，走自己的路。当你
+            拼命想完成一件事的时候，你就不再是别人的对手，或者说得更确切一些，别人就不再是你的对手了，不管是谁，只要下了<br />这
+            个决心，他就会立刻觉得增添了无穷的力量，而他的视野也随之开阔了。
+        </p>
+        <p> —— 大仲马《基督山伯爵》</p>
+    </div>
+</body>
+</html>

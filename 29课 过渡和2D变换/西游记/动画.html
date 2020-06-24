@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>动画</title>
+    <embed src="./樊竹青 - 白龙马.mp3" hidden="true" autostart="true" loop="true">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        body,html{
+            height: 100%;
+        }
+        body{
+            overflow: hidden;
+            background: black url("./3.png") center/100% 100%;
+            background-position: 0px 0px;
+            transition: background-position 1000s;
+        }
+        .sun{
+            float: left;
+            width: 142px;
+            height: 165px;
+            background: url("./4.png");
+            background-position: -39px -9px;
+            margin: 400px 0 0 200px;
+            transition: background-position 120s steps(807);
+        }
+        .tang{
+            float: left;
+            width: 145px;
+            height: 200px;
+            background: url("./2.png");
+            background-position: -9px -9px;
+            margin: 371px 0 0 10px;
+            transition: background-position 120s steps(807);
+        }
+        .zhu{
+            float: left;
+            width: 200px;
+            height: 200px;
+            background: url("./5.png");
+            background-position: 0px 23px;
+            margin: 371px 0 0 10px;
+            transition: background-position 120s steps(807);
+        }
+        .sha{
+            float: left;
+            width: 200px;
+            height: 200px;
+            background: url("./1.png");
+            background-position: -15px 23px;
+            margin: 371px 0 0 0px;
+            transition: background-position 120s steps(807);
+        }
+        body:hover{
+            background-position: 169485px 0px;
+        }
+        body:hover .sha{
+            background-position: -169485px 23px;
+        }
+        body:hover .zhu{
+            background-position: -161400px 23px;
+        } 
+        body:hover .tang{
+            background-position: -137199px -9px;
+        }
+        body:hover .sun{
+            background-position: -161439px -9px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper sun"></div>
+    <div class="wrapper tang"></div>
+    <div class="wrapper zhu"></div>
+    <div class="wrapper sha"></div>   
+</body>
+</html>

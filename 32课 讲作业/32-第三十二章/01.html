@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            perspective: 1000px;
+        }
+        *{margin: 0;padding: 0;}
+        .stage{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 400px auto 0;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 200px;
+            font-size: 40px;
+
+            transform-style:  preserve-3d;
+            /* transform: rotateX(-10deg) rotateY(-10deg); */
+            transform-origin: center center 100px;
+
+            transition: transform 3s linear;
+        }
+
+        /* 动画 */
+
+        .stage:hover{
+            transform: rotateY(360deg);
+        }
+        .stage:hover .cube div.c-box1{
+            transform: rotateX( 250deg );
+        }
+        .stage:hover .small{
+            transform: translateY(-300px) translateZ(100px);
+        }
+
+        /* 大盒子 */
+
+        .stage .cube{
+            width: 100%;
+            height: 100%;
+
+            transform-style:  preserve-3d;
+        }
+
+        .stage .cube div{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 30px rgba(0, 0, 0, .8) inset;
+        }
+
+        .stage .cube div.c-box1{
+            transform-origin: top;
+
+            transform: rotateX( 90deg );
+
+            transition: transform 3s;
+        }
+        .stage .cube div.c-box2{
+            transform-origin: bottom;
+
+            transform: rotateX( -90deg );
+        }
+        .stage .cube div.c-box3{
+            transform-origin: left;
+
+            transform: rotateY( -90deg );
+        }
+        .stage .cube div.c-box4{
+            transform-origin: right;
+
+            transform: rotateY( 90deg );
+        }
+        .stage .cube div.c-box5{
+
+            transform: translateZ(200px);
+        }
+
+
+        /* 小盒子 */
+        .stage .small{
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 100px;
+            height: 100px;
+            transform-style:  preserve-3d;
+
+            transform: translateZ(100px);
+
+            transition: transform 3s;
+        }
+        .stage .small div{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            font-size: 20px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, .8) inset;
+
+            
+        }
+
+        .stage .small div.s-box1{
+            transform: rotateX(90deg) translateZ(50px)
+        }
+        .stage .small div.s-box2{
+            transform: rotateX(-90deg) translateZ(50px)
+        }
+
+        .stage .small div.s-box3{
+            transform: rotateY(-90deg) translateZ(50px)
+        }
+        .stage .small div.s-box4{
+            transform: rotateY(90deg) translateZ(50px)
+        }
+        .stage .small div.s-box5{
+            transform:  translateZ(50px)
+        }
+        .stage .small div.s-box6{
+            transform:  translateZ(-50px)
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="stage">
+        <div class="cube">
+            <div class="c-box1">顶</div>
+            <div class="c-box2">底</div>
+            <div class="c-box3">左</div>
+            <div class="c-box4">右</div>
+            <div class="c-box5">前</div>
+            <div class="c-box6">后</div>
+        </div>
+        <div class="small">
+            <div class="s-box1"></div>
+            <div class="s-box2"></div>
+            <div class="s-box3"></div>
+            <div class="s-box4"></div>
+            <div class="s-box5"></div>
+            <div class="s-box6"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head><!-- 这是头标签 -->
+		<meta charset="UTF-8" /> <!-- 设置编码字符 -->
+		<meta name="keywords" content="关键词" /><!--网站的关键词-->
+		<meta name="description" content="描述" /><!--网站的描述 -->
+		<title>青龙</title>
+		<style type="text/css">
+			
+			/* 
+				1、父子选择器/后代选择器/派生选择器
+				2、直接父子选择器  >
+				3、多类选择器
+				4、普通兄弟选择器  ~
+				   相邻兄弟选择器  +
+			
+			*/
+			
+		
+			/* div span{
+				background-color: red;
+			
+			} */
+
+			/* #box p span{
+			
+				background-color: #3300ff;
+				
+			} */
+
+			/* div > span{
+				background-color: yellow;
+			} */
+
+			/* div.demo{
+				background-color: red;
+			} */
+
+
+			/* .demo ~ div{
+				border: 2px solid black;
+			} */
+
+			/* .demo + div {
+				
+				background-color: yellowgreen;
+			
+			} */
+
+			/* div{
+				background-color: yellowgreen;
+			}
+			
+			span{
+				background-color: yellowgreen;
+			}
+			
+			p{
+				background-color: yellowgreen;
+			} */
+
+			/* div,
+			span,
+			p{
+			
+				background-color: yellow;
+			
+			} */
+
+			#box1{
+				background-color: orange;
+			}
+
+			#box2{
+				background-color: orangered;
+			}
+
+			#box1,
+			#box2{
+				width: 100px;
+				height: 100px;
+			}
+		
+		</style>
+	</head>
+	<body>
+		
+		<!-- <div>
+			<span>111</span>
+		</div>
+		
+		<span>222</span> -->
+
+		<!-- <div id="box">
+			<p class="demo">
+				<span>666</span>
+			</p>
+		</div>
+		<span>888</span> -->
+
+
+
+		<!-- <div id="box">
+			<span>888</span>
+			<p class="demo">
+				<span>666</span>
+			</p>
+		</div> -->
+
+
+		<!-- <div>111</div>
+		
+		<div class="demo" id="box">222</div>
+		
+		<p class="demo">333</p> -->
+
+
+		<!-- <div class="demo">111</div>
+		<p></p>
+		
+		<div>222</div>
+		
+		
+		<p>333</p>
+		<div>444
+			<div>666</div>
+		</div>
+		<div>555</div>
+		<span></span>
+		<div></div> -->
+
+		<!-- <div>444</div>
+		<span>555</span>
+		<p>666</p> -->
+
+		
+		<div id="box1"></div>
+		<div id="box2"></div>
+		
+
+		 
+
+
+	</body>
+</html>

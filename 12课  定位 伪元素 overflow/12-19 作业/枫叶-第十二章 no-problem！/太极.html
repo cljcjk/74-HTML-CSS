@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="Keywords" content="前端开发"/>
+        <meta name="Description" content="前端开发"/>
+        <title>太极</title>
+    </head>
+	<style>
+	    body{
+		    margin: 0;
+			padding: 0;
+			background-color: black;
+			overflow: hidden;
+		}
+        .pic{
+		    position: relative;
+			width: 540px;
+			height: 540px;
+			margin: 100px auto;
+			border-radius: 270px;
+			box-shadow: 0px 0px 100px 5px red;
+			animation: rotate 10s infinite alternate ease-in-out;
+		}
+		.pic1::before{
+		    content:"";
+            display: block;
+			width: 270px;
+			height: 540px;
+			background-color: black;
+			border-radius: 270px 0px 0px 270px;
+			animation: color4 10s infinite alternate ease-in-out;
+		}
+		.pic1::after{
+			content:"";
+            position: absolute;
+			top: 0;
+			right: 0;
+			display: block;
+			width: 270px;
+			height: 540px;
+			background-color: red;
+			border-radius: 0px 270px 270px 0px;
+			z-index: -1;
+			animation: color3 10s infinite alternate ease-in-out;
+		}
+		.pic2::before{
+		    content:"";
+            position: absolute;
+            top: 0px;
+            left: 25%;
+			display: block;
+			width: 90px;
+			height: 90px;
+			background-color: red;
+			border-radius: 270px;
+			border: 90px solid black;
+			animation: color2 10s infinite alternate ease-in-out;
+		}
+		.pic2::after{
+		    content:"";
+            position: absolute;
+			bottom: 0px;
+			left: 25%;
+			display: block;
+			width: 90px;
+			height: 90px;
+			background-color: black;
+			border-radius: 270px;
+			border: 90px solid red;
+			animation: color1 10s infinite alternate ease-in-out;
+		}
+		@keyframes rotate{
+		    from{
+			    transform: rotate(0deg) scale(1);
+                box-shadow: 0px 0px 100px 5px red;
+			}
+			to{
+			    transform: rotate(3600deg) scale(0.2);
+				box-shadow: 0px 0px 100px 5px yellow;
+			}
+		}
+		@keyframes color1{
+		    from{
+			    background-color: black;
+                border: 90px solid red;
+			}
+			to{
+			    background-color: #363;
+                border: 90px solid #c03;
+			}
+		}
+		@keyframes color2{
+		    from{
+			    background-color: red;
+                border: 90px solid black;
+			}
+			to{
+			    background-color: #c0f;
+                border: 90px solid #f6f;
+			}
+		}
+		@keyframes color3{
+		    from{
+			    background-color: red;
+			}
+			to{
+			    background-color: #9f6;
+			}
+		}
+		@keyframes color4{
+		    from{
+			    background-color: black;
+			}
+			to{
+			    background-color: #6ff;
+			}
+		}
+	</style>
+    <body>
+	    <div class="pic">
+		    <div class="pic1">
+			    <div class="pic2"></div>
+			</div>
+		</div>
+	</body>
+	<script></script>
+</html>

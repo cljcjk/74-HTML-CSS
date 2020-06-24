@@ -1,0 +1,308 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="Keywords" content="前端开发"/>
+        <meta name="Description" content="前端开发"/>
+        <title>枫叶</title>
+    </head>
+	<style>
+	    body,ul{
+		    margin: 0;
+			padding: 0;
+		}
+		body{
+		    height: 2000px;
+		}
+		.pic{
+		    margin: 10px auto;
+			width: 904px;
+			height: 417px;
+			background-color: #d9bea6;
+			padding: 44px 75px 37px 67px;
+			border-left: 25px solid #8b5539;
+			border-top: 25px solid #8b5539;
+			border-right: 25px inset #372116;
+			border-bottom: 25px inset #372116;
+		}
+		.pic img{
+		    display: block;
+			border: 4px solid #8a8a8a;
+			border-bottom-width: 3px; 
+		}
+		.far-p{
+		    width: 675px;
+			height: 675px;
+			margin: 10px auto;
+			border-radius: 50%;
+			transition: 30s;
+			border: 25px inset #3c0;
+		}
+		.far-p1{
+		    width: 575px;
+			height: 575px;
+			margin: 25px auto;
+			border-radius: 50%;
+			border: 25px inset #3c0;
+		}
+		.far-p2{
+		    width: 475px;
+			height: 475px;
+			margin: 25px auto;
+			border-radius: 50%;
+			border: 25px inset #3c0;
+		}
+		.far-p3{
+		    width: 375px;
+			height: 375px;
+			margin: 25px auto;
+			border-radius: 50%;
+			border: 25px inset #3c0;
+		}
+		.far-p4{
+		    width: 275px;
+			height: 275px;
+			margin: 25px auto;
+			border-radius: 50%;
+			border: 25px inset #3c0;
+		}
+		.far-p5{
+		    width: 175px;
+			height: 175px;
+			margin: 25px auto;
+			border-radius: 50%;
+			border: 25px inset #3c0;
+		}
+		.far-p6{
+		    width: 75px;
+			height: 75px;
+			margin: 25px auto;
+			border-radius: 50%;
+			border: 25px inset #3c0;
+		}
+		.far-p7{
+		    width: 25px;
+			height: 25px;
+			background-color: #1e7800;
+			margin: 25px auto;
+			border-radius: 50%;
+		}
+		.far-p:hover{
+		    transform: rotate(36000deg);
+		}
+		ul{
+		    list-style: none;
+		}
+		.btn{
+			margin: 10px auto;
+			text-align: center;
+		}
+		.btn ul li{
+		    display: inline-block;
+			line-height: 34px;
+			background: url("images/3d-bg.png") no-repeat 0 -34.5px; 
+			margin-left: 6px;
+		}
+		.btn ul li a{
+			display: inline-block;
+			line-height: 34px;
+			text-decoration: none;
+			color: #fff;
+			margin-left: 6px;
+			padding-right: 6px;
+			background: url("images/3d-bg.png") no-repeat right -34.5px;
+		}
+		.btn ul li:hover{
+		    background-position: 0 0px;
+			color: #ad62bb;
+		}
+		.btn ul li:hover a{
+		    background-position: right 0px;
+			color: #ad62bb;
+		}
+		.sidebar{
+		    width: 700px;
+			margin: 20px auto;
+		}
+		.sidebar ul li{
+		    width: 40px;
+			height: 40px;
+			background: url("images/1.png");
+		}
+		.sidebar .left{
+		    display: inline-block;
+		}
+        .sidebar .left li{
+            margin-bottom: 5px;
+        }
+		.sidebar .right{
+		    display: inline-block;
+			margin-left: 615px;
+		}
+		.sidebar .right li{
+            margin-bottom: 5px;
+        }
+		.left li:nth-child(1){
+			background-position: -80px -280px;
+		}
+		.left li:nth-child(1):hover{
+		    background-position: -120px -280px;
+		}
+		.left li:nth-child(2){
+			background-position: 0px -200px;
+		}
+		.left li:nth-child(2):hover{
+		    background-position: -40px -200px;
+		}
+		.left li:nth-child(3){
+			background-position: 0px -240px;
+		}
+		.left li:nth-child(3):hover{
+		    background-position: -40px -240px;
+		}
+		.left li:nth-child(4){
+			background-position: 0px -320px;
+		}
+		.left li:nth-child(4):hover{
+		    background-position: -40px -320px;
+		}
+		.left li:nth-child(5){
+			background-position: 0px 0px;
+		}
+		.left li:nth-child(5):hover{
+		    background-position: -40px 0px;
+		}
+		.left li:nth-child(6){
+			background-position: 0px -40px;
+		}
+		.left li:nth-child(6):hover{
+		    background-position: -40px -40px;
+		}
+		.left li:nth-child(7){
+			background-position: 0px -80px;
+		}
+		.left li:nth-child(7):hover{
+		    background-position: -40px -80px;
+		}
+		.left li:nth-child(8){
+			background-position: 0px -120px;
+		}
+		.left li:nth-child(8):hover{
+		    background-position: -40px -120px;
+		}
+		.left li:nth-child(9){
+			background-position: 0px -160px;
+		}
+		.left li:nth-child(9):hover{
+		    background-position: -40px -160px;
+		}
+		.right li:nth-child(1){
+			background-position: -80px 0px;
+		}
+		.right li:nth-child(1):hover{
+		    background-position: -120px 0px;
+		}
+		.right li:nth-child(2){
+			background-position: -80px -40px;
+		}
+		.right li:nth-child(2):hover{
+		    background-position: -120px -40px;
+		}
+		.right li:nth-child(3){
+			background-position: -80px -80px;
+		}
+		.right li:nth-child(3):hover{
+		    background-position: -120px -80px;
+		}
+		.right li:nth-child(4){
+			background-position: -80px -120px;
+		}
+		.right li:nth-child(4):hover{
+		    background-position: -120px -120px;
+		}
+		.right li:nth-child(5){
+			background-position: -80px -160px;
+		}
+		.right li:nth-child(5):hover{
+		    background-position: -120px -160px;
+		}
+		.right li:nth-child(6){
+			background-position: -80px -200px;
+		}
+		.right li:nth-child(6):hover{
+		    background-position: -120px -200px;
+		}
+		.right li:nth-child(7){
+			background-position: -80px -240px;
+		}
+		.right li:nth-child(7):hover{
+		    background-position: -120px -240px;
+		}
+		.right li:nth-child(8){
+			background-position: 0px -280px;
+		}
+		.right li:nth-child(8):hover{
+		    background-position: -40px -280px;
+		}
+		.right li:nth-child(9){
+			background-position: -80px -320px;
+		}
+		.right li:nth-child(9):hover{
+		    background-position: -120px -320px;
+		}
+	</style>
+    <body>
+	    <div class="pic">
+            <img src="images/timg.jpg" width="896" height="410" alt="老鹰" title="雄鹰展翅图" />
+		</div>
+		<div class="far-p">
+		    <div class="far-p1">
+			    <div class="far-p2">
+				    <div class="far-p3">
+					    <div class="far-p4">
+						    <div class="far-p5">
+							    <div class="far-p6">
+								    <div class="far-p7"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="btn">
+		    <ul>
+		    	<li><a href="#">111111</a></li>
+		    	<li><a href="#">2222222222</a></li>
+		    	<li><a href="#">3333333</a></li>
+		    	<li><a href="#">4444</a></li>
+		    	<li><a href="#">55555</a></li>
+		    </ul>
+		</div>
+		<div class="sidebar">
+		    <ul class="left">
+		    	<li></li>
+		    	<li></li>
+		    	<li></li>
+		    	<li></li>
+		    	<li></li>
+		    	<li></li>
+		    	<li></li>
+		    	<li></li>
+		    	<li></li>
+			</ul>
+			<ul class="right">
+		    	<li></li>
+		    	<li></li>
+		    	<li></li>
+		    	<li></li>
+		    	<li></li>
+		    	<li></li>
+		    	<li></li>
+		    	<li></li>
+		    	<li></li>
+		    </ul>
+		</div>
+	</body>
+	<script></script>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="Keywords" content="前端开发"/>
+        <meta name="Description" content="前端开发"/>
+        <title>布局</title>
+    </head>
+	<style>
+	    body,ul{
+		    margin: 0;
+			padding: 0;
+		}
+		ul{
+		    list-style: none;
+		}
+		.box{
+		    width: 800px;
+		    /* height: 738px; */
+			margin: 50px auto 0;
+		}
+		.box ul li:nth-child(1){
+		    float: left;
+			width: 800px;
+			height: 100px;
+			background-color: #f00;
+			margin-bottom: 12px;
+			text-align: center;
+			font-size: 22px;
+			font-weight: bold;
+		}
+		.box ul li:nth-child(2){
+		    float: left;
+			width: 624px;
+			height: 506px;
+			background-color: #ffc0cb;
+		}
+		.box ul li:nth-child(3){
+		    float: right;
+			width: 160px;
+			height: 506px;
+			background-color: #ff3;
+			text-align: center;
+		}
+		.box ul li:nth-child(4){
+		    float: left;
+			width: 800px;
+			height: 100px;
+			background-color: #f00;
+			margin-top: 20px;
+			text-align: center;
+			font-weight: bold;
+			font-size: 18px;
+		}
+		.box1{
+		    float: left;
+			width: 624px;
+			height: 100px;
+			background-color: #00f;
+			text-align: center;
+			margin-bottom: 12px;
+		}
+		.box2{
+		    float: left;
+			width: 304px;
+			height: 394px;
+			background-color: #60f;
+			text-align: center;
+		}
+		.box3{
+		    float: right;
+			width: 304px;
+			height: 394px;
+			background-color: #f93;
+			text-align: center;
+		}
+	</style>
+    <body>
+	    <div class="box">
+		    <ul>
+		    	<li>如果有人说你潜力很大的时候<br />说明你现在什么都不是</li>
+		    	<li>
+				    <div class="box1">中间左上</div>
+					<div class="box2">中间左下左</div>
+					<div class="box3">中间左下右</div>
+				</li>
+		    	<li>中间右</li>
+		    	<li>版权归属→枫叶←</li>
+		    </ul>
+		</div>
+	</body>
+	<script></script>
+</html>

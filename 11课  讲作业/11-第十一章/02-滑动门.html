@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+        *{padding: 0;margin: 0;}
+        a{text-decoration: none}
+
+        .wrap{
+            margin: 100px;
+        }
+        div.box{
+            height: 34px;
+            display: inline-block;
+            /* border: 1px solid black; */
+
+            background: url(./images/3d-bg.png) no-repeat 0 -34.5px;
+        }
+
+        div.box a{
+            display: inline-block;
+            line-height: 34px;
+            margin-left: 10px;
+            padding-right: 10px;
+            color: #fff;
+            background: url(./images/3d-bg.png) no-repeat right -34.5px;
+        }
+
+        
+        div.box:hover{
+            background-position: 0 0;
+            color: blueviolet;
+        }
+        div.box:hover a{
+            background-position: right 0;
+            color: blueviolet;
+        }
+    
+    
+    </style>
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="box"><a href="">阴小湿大</a></div>
+        <div class="box"><a href="">蒓洁囝仔</a></div>
+        <div class="box"><a href="">74期基础班何志勇</a></div>
+        <div class="box"><a href="">楚云浩</a></div>
+        <div class="box"><a href="">理想</a></div>
+    </div>
+    
+</body>
+</html>

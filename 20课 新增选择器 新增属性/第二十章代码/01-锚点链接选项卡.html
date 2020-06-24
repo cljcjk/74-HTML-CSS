@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+    
+        .wrapper{
+            position: relative;
+            width: 640px;
+            height: 632px;
+            margin: 100px auto 0;
+            border: 1px solid orange;
+        }
+
+        .wrapper div{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .wrapper div img{
+            opacity: 0
+        }
+
+        .wrapper div a{
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid orange;
+            z-index: 1
+        }
+
+        .wrapper div a[href="#banner1"]{
+            left: 150px;
+        }
+
+        .wrapper div a[href="#banner2"]{
+            left: 256px;
+        }
+
+        .wrapper div a[href="#banner3"]{
+            left: 362px;
+        }
+
+        .wrapper div a[href="#banner4"]{
+            left: 468px;
+        }
+
+        /* .wrapper div a span{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: orangered;
+
+            opacity: 0;
+        } */
+
+        #banner1 img{
+            opacity: 1
+        }
+
+        /* div:target img,
+        div:target a span{
+            opacity: 1;
+        } */
+        div:target img{
+            opacity: 1;
+        }
+        div:target a{
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="banner1">
+            <img src="./images/1.jpg" alt="">
+            <a href="#banner1" target></a>
+        </div>
+        <div id="banner2">
+            <img src="./images/2.jpg" alt="">
+            <a href="#banner2" target=></a>
+        </div>
+        <div id="banner3">
+            <img src="./images/3.jpg" alt="">
+            <a href="#banner3" target=></a>
+        </div>
+        <div id="banner4">
+            <img src="./images/4.jpg" alt="">
+            <a href="#banner4" target=></a>
+        </div>
+    </div>
+</body>
+</html>

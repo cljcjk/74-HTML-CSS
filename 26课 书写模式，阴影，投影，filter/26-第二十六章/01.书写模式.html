@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+        p{
+            width: 400px;
+            border: 1px solid orange;
+        }
+        .demo1{
+            direction: ltr;
+        }
+        .demo2{
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+
+        div{
+            width: 300px;
+            height: 80px;
+            border: 1px solid black;
+            writing-mode: horizontal-tb;
+        }
+
+        .rl{
+            writing-mode: vertical-lr;
+        }
+
+        .rl li{
+            width: 180px;
+            height: 180px;
+            margin-right: 20px;
+            border: 2px solid yellow;
+        }
+
+        .lr{
+            writing-mode: vertical-rl;
+        }
+
+        .lr li{
+            width: 180px;
+            height: 180px;
+            margin-right: 20px;
+            border: 2px solid yellowgreen;
+        }
+    
+    </style>
+</head>
+<body>
+    <p class="demo1">本段文字将按照从左到右的方向进行流动。本段文字将按照从左到右的方向进行流动</p>
+    <p class="demo2">本段文字将按照从左到右的方向进行流动。本段文字将按照从左到右的方向进行流动</p>
+
+    <div>本段文字将按照从左到右的方向进行流动。本段文字将按照从左到右的方向进行流动</div>
+
+    <ul class="rl">
+        <li>1本段文字将按照从左到右的方向进行流动。本段文字将按照从左到右的方向进行流动</li>
+        <li>2本段文字将按照从左到右的方向进行流动。本段文字将按照从左到右的方向进行流动</li>
+    </ul>
+
+    <ul class="lr">
+        <li>1本段文字将按照从左到右的方向进行流动。本段文字将按照从左到右的方向进行流动</li>
+        <li>2本段文字将按照从左到右的方向进行流动。本段文字将按照从左到右的方向进行流动</li>
+    </ul>
+
+</body>
+</html>

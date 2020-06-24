@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>写轮眼一勾玉</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper{
+            /* overflow: hidden; */
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background-color: red;
+            margin: 30px auto 0;
+            border-radius: 50%;
+            transition: 5s linear;
+            background-image: radial-gradient(30px circle at 270px 140px, black 99%,transparent 100%),
+                              radial-gradient(circle,black 30px,transparent 30px,transparent 95px,black 95px,black 100px,transparent 100px,transparent 193px,black 193px);
+        }
+        .wrap{
+            width: 40px;
+            height: 50px;
+            background-color: rgb(30, 255, 0,0);
+            position: absolute;
+            top: 96px;
+            left: 248px;
+            border-style: solid;
+            border-width: 0 0 0 60px;
+            border-radius: 100% 0 0 0;
+            transform: rotate(20deg);
+            transition: 5s;
+            
+        }
+        div .wrap:nth-child(2)::before{
+            content: "";
+            display: block;
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            background-color: black;
+            transform: translateX(-60px) translateY(22px);
+        }
+        div .wrap:nth-child(2){
+            top: 101px;
+            left: 47px;
+            transform: rotate(257deg) scale(0);
+        }
+        div .wrap:nth-child(3)::before{
+            content: "";
+            display: block;
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            background-color: black;
+            transform: translateX(-60px) translateY(22px);
+        }
+        div .wrap:nth-child(3){
+            top: 298px;
+            left: 137px;
+            transform: rotate(166deg) scale(0);
+        }
+        .wrapper:hover .wrap:nth-child(2){
+            transform: rotate(257deg) scale(1);
+        }
+        .wrapper:hover .wrap:nth-child(3){
+            transform: rotate(166deg) scale(1);
+        }
+        .wrapper:hover{
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrap"></div>
+        <div class="wrap"></div>
+        <div class="wrap"></div>
+    </div>
+</body>
+</html>

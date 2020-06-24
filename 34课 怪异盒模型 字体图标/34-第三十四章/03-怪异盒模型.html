@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        body{
+            font-size: 24px;
+        }
+    
+        .content-box{
+            box-sizing: content-box;
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            padding: 40px;
+            border: 10px solid yellowgreen;
+            background-color: orange;
+        }
+
+        .content-box .c-box{
+            width: 200px;
+            height: 200px;
+            background-color: orangered;
+        }
+
+        /* 实际宽 = width + padding + border  = 200 + 80 + 20 = 300 */
+
+        .border-box{
+            box-sizing: border-box;
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            padding: 40px;
+            border: 10px solid yellowgreen;
+            background-color: orange;
+        }
+
+        .border-box .b-box{
+            width: 200px;
+            height: 200px;
+            background-color: orangered;
+        }
+    
+    
+    </style>
+</head>
+<body>
+
+
+    <div class="content-box">
+
+        <div class="c-box">
+            标准盒： <br>
+            width: 200px; <br>
+            height: 200px; <br>
+            border: 10*4   <br>
+            padding: 40*4  <br>
+        </div>
+
+    </div>
+
+
+
+    <div class="border-box">
+
+        <div class="b-box">
+            怪异盒： <br>
+            width: 300px; <br>
+            height: 300px; <br>
+            border: 10*4   <br>
+            padding: 40*4  <br>
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>

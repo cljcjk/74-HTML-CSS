@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head><!-- 这是头标签 -->
+		<meta charset="UTF-8" /> <!-- 设置编码字符 -->
+		<meta name="keywords" content="关键词" /><!--网站的关键词-->
+		<meta name="description" content="描述" /><!--网站的描述 -->
+		<title>青龙</title>
+		<style type="text/css">
+
+			*{
+				padding: 0;
+				margin: 0;
+			
+			}
+		
+			.wrap{
+				position: relative;
+				width: 200px;
+				height: 200px;
+				margin-left: 100px;
+				background-color: orange;
+			}
+
+			.content{
+				/* position: relative; */
+				width: 100px;
+				height: 100px;
+				margin-left: 100px;
+				background-color: orangered;
+			}
+
+			.demo{
+
+				position: absolute;
+				top: 0;
+				left: 0px;
+				
+				width: 50px;
+				height: 50px;
+				background-color: black;
+			}
+		
+			/* 
+			
+				定位
+					
+					绝对定位  absolute
+						脱离原来位置进行定位
+						相对于最近的有定位的父级进行定位，如果没有那么相对于浏览器进行定位
+						
+
+
+					相对定位  relative
+					    保留原来的位置进行定位
+						相对于原来的位置进行定位
+			
+			
+			
+			*/
+		
+		</style>
+	</head>
+	<body>
+		
+		<div class="wrap">
+		
+			<div class="content">
+			
+				<div class="demo"></div>
+
+			</div>
+		
+		</div>
+
+	</body>
+</html>

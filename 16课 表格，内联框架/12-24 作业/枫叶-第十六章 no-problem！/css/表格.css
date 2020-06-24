@@ -1,0 +1,27 @@
+body{margin: 0; padding: 0;}
+body{
+    background:black url("../images/bg1.jpg") no-repeat top center/cover;
+}
+table{
+    width: 600px;
+    margin: 100px auto 0;
+    /* border-collapse: collapse; */
+    table-layout: fixed;
+    text-align: center;
+    border-spacing: 3px;
+    border: 1px solid transparent;
+}
+caption{
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+}
+th,td{
+    border-radius: 40px;
+    background-color: rgb(202, 202, 85,0.8);
+    line-height: 20px;
+}
+th,td:hover{
+    color: red;
+}
+

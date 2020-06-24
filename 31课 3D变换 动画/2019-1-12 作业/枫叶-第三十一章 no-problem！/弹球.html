@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>弹球</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        } 
+        .ball-box{
+            width: 240px;
+            margin: auto;
+            text-align: center;
+        }   
+        .ball{
+            width: 130px;
+            height: 130px;
+            background-color: yellow;
+            margin: 250px 0 0 55px;
+            border-radius: 50%;
+            animation: colorchange 7s infinite linear;
+        }
+        .shadow{
+            width: 240px;
+            height: 30px;
+            border-radius: 50%/50%;
+            background-color: rgba(0, 0, 0,0.5);
+            transform: scale(1);
+            animation: change 7s infinite linear;
+        }
+        @keyframes change{
+            from,20%,55%,75%{
+                transform: scale(0.2); 
+            }
+            10%,65%,to{
+                transform: scale(0.5);
+            }
+            45%,95%{
+                transform: scale(1);
+            }
+        }
+        @keyframes colorchange{
+            from,20%,55%,75%{
+                background-color: yellow;
+                transform: translateY(0px);
+            }
+            10%,65%{
+                background-color: blue;
+                transform: translateY(-125px);
+            }
+            45%,95%{
+                background-color: black;
+                transform: translateY(-250px);
+            }
+            to,50%{
+                background-color: red;
+                transform: translateY(-125px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ball-box">
+        <div class="ball"></div>
+        <div class="shadow"></div>
+    </div>   
+</body>
+</html>

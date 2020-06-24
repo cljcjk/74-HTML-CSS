@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+    div{
+        margin-bottom: 50px;
+        border: 1px solid #000;
+    }
+    
+    .demo1{
+        width: 200px;
+        height: 200px;
+
+        background-image: radial-gradient( 50px 100px ellipse,transparent 40px, yellow 41px, red 49px, transparent 50px),
+                          radial-gradient( 40px circle, red 39px, transparent 40px);
+
+    }
+
+    .demo2{
+        position: relative;
+        width: 200px;
+        height: 100px;
+        border: 0;
+        background-color: yellowgreen;
+    }
+    .demo2::after{
+        content: "";
+        position: absolute;
+        height: 10px;
+        left: 0;
+        right: 0;
+        bottom: -10px;
+
+        background-image: radial-gradient(20px 15px ellipse at top, yellowgreen 10px, transparent 11px);
+        background-size: 20px 10px;
+    }
+
+    .demo3{
+        width: 400px;
+        height: 300px;
+        background-color: #655;
+        background-image: radial-gradient(tan 30%, transparent 31%),
+                          radial-gradient(yellow 30%, transparent 31%),
+                          radial-gradient(green 30%, transparent 31%),
+                          radial-gradient(red 30%, transparent 31%);
+        background-size: 30px 30px;
+        background-position: 0 0, 15px 0, 0 15px, 15px 15px;
+    }
+
+    .demo4{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+
+        background-image: radial-gradient(circle at center 75px, red 25px, black 25px, black 75px, transparent 0),
+                          radial-gradient(circle at center 225px, black 25px, red 25px, red 75px, transparent 0),
+                          linear-gradient(to right, red 50%, black 50%);
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="demo1"></div>
+    <div class="demo2"></div>
+    <div class="demo3"></div>
+    <div class="demo4"></div>
+    <div class="demo5"></div>
+</body>
+</html>

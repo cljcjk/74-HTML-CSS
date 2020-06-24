@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<!--
+2013-9-30: Created.
+-->
+<svg>
+<metadata>
+Created by iconfont
+</metadata>
+<defs>
+
+<font id="iconfont" horiz-adv-x="1024" >
+  <font-face
+    font-family="iconfont"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1024"
+    ascent="896"
+    descent="-128"
+  />
+    <missing-glyph />
+    
+    <glyph glyph-name="shouji1" unicode="&#58907;" d="M736 832H288a71.76 71.76 0 0 1-71.68-71.68v-752.64A71.76 71.76 0 0 1 288-64h448a71.76 71.76 0 0 1 71.68 71.68V760.32A71.76 71.76 0 0 1 736 832zM512 16.64a35.84 35.84 0 1 0 35.84 35.84A35.84 35.84 0 0 0 512 16.64z m233 116.48H279V706.56h466z"  horiz-adv-x="1024" />
+
+    
+    <glyph glyph-name="shouji" unicode="&#58903;" d="M766.003899-78.097466H282.947368a47.906433 47.906433 0 0 0-47.906432 47.906433V812.163743a47.906433 47.906433 0 0 0 47.906432 47.906432h483.056531a47.906433 47.906433 0 0 0 47.906432-47.906432v-842.354776a47.906433 47.906433 0 0 0-47.906432-47.906433z m-241.528265 57.88694a61.879142 61.879142 0 1 1-61.879143 61.879142 61.879142 61.879142 0 0 1 61.879143-61.879142z m202.604288 791.454191H321.871345v-598.83041h405.208577V771.243665z"  horiz-adv-x="1024" />
+
+    
+
+
+  </font>
+</defs></svg>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+        /* table{
+            border: 1px solid red;
+        } */
+
+        body{
+            background: black url(./bg1.jpg) no-repeat top center/cover;
+        }
+
+        table{
+            width:700px;
+            margin: 50px auto 0;
+            /* border-collapse: collapse; */
+            table-layout: fixed;
+            border-spacing: 3px;
+        }
+
+        th,td{
+            height: 40px;
+            text-align: center;
+            background-color: beige;
+            border-radius: 3px;
+
+            opacity: .7;
+            /*color: rgba() */
+        }
+
+        caption{
+            color: beige;
+            font-size: 24px;
+        }
+    
+    </style>
+</head>
+<body>
+    <table>
+
+        <caption>课程表</caption>
+
+        <thead>
+            <tr>
+                <th colspan="2">时间</th>
+                <th>星期一</th>
+                <th>星期二</th>
+                <th>星期三</th>
+                <th>星期四</th>
+                <th>星期五</th>
+            </tr>
+        </thead>
+
+        <tfoot>
+            <tr>
+                <td colspan="7" style="color: red">青龙老师基础班课程表</td>
+            </tr>
+        </tfoot>
+        
+        <tbody>
+            <tr>
+                <td rowspan="4">上午</td>
+                <td>1</td>
+                <td>思想品德</td>
+                <td>语文</td>
+                <td>数学</td>
+                <td>物理</td>
+                <td>地理</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>思想品德</td>
+                <td>语文</td>
+                <td>数学</td>
+                <td>物理</td>
+                <td>地理</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>思想品德</td>
+                <td>语文</td>
+                <td>数学</td>
+                <td>物理</td>
+                <td>地理</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>思想品德</td>
+                <td>语文</td>
+                <td>数学</td>
+                <td>物理</td>
+                <td>地理</td>
+            </tr>
+            <tr>
+                <td colspan="7">休息</td>
+            </tr>
+            <tr>
+                <td rowspan="3">下午</td>
+                <td>5</td>
+                <td>思想品德</td>
+                <td>语文</td>
+                <td>数学</td>
+                <td>物理</td>
+                <td>地理</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>思想品德</td>
+                <td>语文</td>
+                <td>数学</td>
+                <td>物理</td>
+                <td>地理</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>思想品德</td>
+                <td>语文</td>
+                <td>数学</td>
+                <td>物理</td>
+                <td>地理</td>
+            </tr>
+        </tbody>
+        
+        
+    </table>
+</body>
+</html>

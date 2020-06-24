@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+        .wrap{
+            position: relative;
+            width: 200px;
+            margin: 200px auto;
+        }
+
+        .wrap div{
+            position: absolute;
+            width: 200px;
+            height: 304px;
+            border: 1px solid yellowgreen;
+
+            background: url(./poker.png) no-repeat 0/3830px;
+
+
+            transform-origin: center 260px;
+
+            transition: transform 2s;
+        }
+
+        .wrap .box1{
+            background-position: -2164px -176px;
+        }
+        .wrap .box2{
+            background-position: -2403px -176px;
+        }
+        .wrap .box3{
+            background-position: -2644px -176px;
+        }
+        .wrap .box4{
+            background-position: -2881px -176px;
+        }
+        .wrap .box5{
+            background-position: -128px -176px;
+        }
+
+        .wrap:hover .box1{
+            transform: rotate( -50deg );
+        }
+        .wrap:hover .box2{
+            transform: rotate( -25deg );
+        }
+        .wrap:hover .box4{
+            transform: rotate( 25deg );
+        }
+        .wrap:hover .box5{
+            transform: rotate( 50deg );
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+    </div>
+</body>
+</html>

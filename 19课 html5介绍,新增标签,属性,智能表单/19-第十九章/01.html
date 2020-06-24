@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> -->
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: #000;
+        }
+
+        marquee{
+            width: 600px;
+            height: 220px;
+            border: 2px solid black;
+        }
+
+        /* meter{
+            height: 40px;
+            width: 400px;
+        } */
+    
+    </style>
+</head>
+
+<body>
+
+    <input type="radio" checked> <br>
+    <input type="radio" checked="checked"> <br>
+    <input type="radio" checked=""> <br>
+    <input type="radio"> <br>
+
+
+    <div class=box></div>
+
+    <span></span>
+
+    <h1>这竟然才是淘宝造物节的最强黑科技…</h1>
+    <h2></h2>
+    <h3></h3>
+    <h4></h4>
+    <h5></h5>
+    <h6></h6>
+    <p></p>
+
+    <img src="" alt="美女" title="这是一张美女图片">
+
+
+    <div class="headder">
+        <header>
+            <div></div>
+        </header>
+    </div>
+    <div class="main"></div>
+    <div class="footer"></div>
+
+    <!-- =================================== -->
+
+    <header>
+        <nva>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </nva>
+    </header>
+
+    <article>
+
+        <header>
+
+        </header>
+
+            <section>
+
+            </section>
+
+        <footer>
+
+        </footer>
+
+    </article>
+
+    <footer></footer>
+
+        <!-- =================================== -->
+
+    <div id="nav">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <!-- =================================== -->
+
+    <nav>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </nav>
+
+    <!-- =================================== -->
+
+    <aside>
+        <nav>
+            <ul>
+                <li3></li3>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- =================================== -->
+
+    <figure>
+          <img src="../zhishidian/1.png" alt="">
+          <figcaption>
+                阿里巴巴创始人，乡村教师代言人
+          </figcaption>    
+      </figure>
+
+
+      <!-- <marquee behavior="" direction="">
+
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAA9dJREFUWIXFl09sVFUUh79738y8mY7WN1RQakDCVNpp1TQtiE2LQTYNxCYQF0QXbkQWshEiLly4wMTEYMLGGI11YYxxg5ooihsXplSkkLak1JamkLjQCq3tzOh05s303evidTotTOe94iC/1cvc3znnm3PufX8Ei0ofTuxXSh0VgnaQUe6ClMIW6IsaTsU+Gf8KQAAkDzW+K4R8424UXU1a6/es3vHjIn04sV9rvv4/ixclBAekUurovSgOoLQ6Jt2Z3ysCuT3gZ8MJ6yECHc/jjP6EqG8mGG9BhEIUro9h1D2Mff4M5s5u8lcvE9iSwD7zAdLwri8kEekHVERrCXe/hHnwLcTW7WRHBjESXWSGhwm0dRN97UPMvYfQdVsJPPEs2TkH5fjJDL4AAFR6jtzQOQCyg+dRuXnyV4cByHz7GdlzZwEw6jcTe/MjbNb5ghCpVxLa0xUMkzc3UbjxJ7LWwrnxO4Et2yhMjhJqeJz89TECGx5BOwsY6zcCUJi8glA2kZhRcRyeAIGmpzEeawcNhaxGK+9/VZR9ZYDC2IWKEAGvJPLRZsyeIwCY/msDoHrfwR65QHbOWRXCcw/o9F9rLFuSk3Rj1QKrbkzPDiwHsEcGUMnpin65bgNmyw63cKoUW4S4tRPeAH+XkmS+/5xs/w8V/ZFnnisBJGdWrJWD8ARQyzogrQcBCD+1h+CmeFl/qLF16bo4gkoQ/kagNQiBYdW5AG27iO570YPcQaWT5ZeWQXgCoBz0fAoRtZCLAPN93+FM/1HWHunaSzDegpOao9KZLUJ4A+B2QUQtjAdcgPzoJfKjl8p6Q83tBOMtt81/NQhfACo9g9wYJ9jYSuzYybKef778mMJvE8jYejfGBwD4BNDp2aXrzNkvCG5uwDry9gpP5ptPAZb2iZOaxY/8ASweRRmJkh8bxJmeQufmEeEadz2bwZm96XoWx1TlDrjJRDiCCNfgzEwx9cIOQs1toCE/Noh2FpD31SKCIaD8EbxjgOX3AuvVE+QGfsS+/DP2yAAA8n6LcGsnkZ17SjHV7UAJoGZ3DzW7e0A55CdHQQhC8WZufdJUFUAlb97+ozQIbXtyFWKNM1v5mVGUvxcSIC/rMJo6Cbd1YbZ2ImtjKyFTs+SG+rGH+sgN9fvugG8AgFxaUZjXICShhhbMtl2gFLmhPgrXfnVv2WuUmHs5kZPS/7vGEkSVJAX64loCwrWSYI2oSnEjSFJqOLXWwGpBBIK8v/hx2nRSCPH6WhP8l3FIk1/qT090SACrd/y4EBzQqD6tyPpNciedkAGSZkScqD890QHwL8sTnqjY5DriAAAAAElFTkSuQmCC" alt="">
+            <img src="data:image/png;base64,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" alt="">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAA6ZJREFUWIXFlktsG1UYhb+58dgTj13bpG4TJ6WqQitSUEsQNCIg8ZCQUNmhKpuyqVggsUJiwwIR2ICABbBFiO4QLUJFVUHdQhseAZKWAg5phUjdxE4auzZ+j8d3WLg2E8WPSeOEs5rR/Pec8z/unasAHD45G9QMdVJaTAghImwtEhacLqvlycsnRtPK4ZOzQa3imQIObrHwGkhJ1PCUx4VmqJPbLQ4gBCPuiucNIS0mtlu8YQI54XLac7VH4fOJYQC+ms8wGy/w2uMDALx9Ic7ogJdn7gkA8Nxn15CWIwsDwqlbBej3qbw3leDr+TSxjIFQIJYxiN4sMXezRNjr4vzVjEPx2xach9bw/KE+xu/2sVN3UahIHh7UGQlr7PapZA3J8UN9CMU5n8tpoCktXj4fAyCRrZAumXzwwwoA88kyK3mThYwBgLWBCihjH/3RMrzP62KX7thjUyznTFJFs+X3tuxP7fPzynj/pgy8czHBmeitlt/bzkCyUN2UeI2jdfadDbQpnWMDHTjatsDeu5l4gU9mVhvvFrXRsQ9c/fHVxwbYG3Sv49iwAXv53D0KPy/l25LVodi2YacWtDVQqEhKpkRzCYbv8vD6ExGEAgoK0rL45u8s3y5kGwePVxUc3R9gt64CkDMkRrX9nuy4x1LFKhG/oNdVI18tmHwZvcWZuXQju70BN8fuC/HsgSBeVdjWdp6hjgaSBZOIv5bRuxcTnP0zjWk7ax/o93JkUCdnSE79lsLv6eHYwVBj7eYN2LKYTRTWiANcShS4lCg03g/0aQ0DXalAypbF0f0BlrKVpnHXUiWuLBcJ9fb8Z74bFbBn8eQ+Pyt5k36f2mhLHR/PrHJluUhQc9nWdj7IOv4NkzaSc/MZXjq3wKe/JtfF5cq1uJBmq0C3hrCOOvn0Yp6zc2nG9ugATC3k+D6WAyC4lS0I9dbCr2cM3roQbxq/tgVd3gVPD+9gzw4338VyTF3PMbdaxLLg3rDG2JCPR4Z07t/V23TtnRuwlVEBRsIaI2GNFx7cSbpU63vQ1vc6LJwNYUcDRtUib0h09/p5bSZcxz+lKlUHl0NH153jX/zFkSGdsUGdhyI6gRbC6VKVnxbzTC/mmb7h8MfV7krWDEKpnXY1Qz6kZTG9mOfHG3muJktsiOy2gTiwuXvXHUJKuSQsOP1/iAMIoZwSZbU8KSXRbVeX/G5a2pvi8onRtOEpj0v4EGTz06WbulIugfW+qXge/eXF4cy/C7eVCw87IhIAAAAASUVORK5CYII=" alt="">
+
+      </marquee> -->
+      
+      <!-- <code>
+
+        var a = 666;
+        var b = 888;
+        var c = a + b;
+
+      </code> -->
+
+
+
+      <!-- 样式标签 -->
+
+      <!-- <mark style="background-color:chartreuse">mark标签</mark> -->
+      
+      <meter min="0" max="100" value="60" low="20" high="80"></meter>
+      <meter min="0" max="100" value="20" low="40" high="80"></meter>
+      <meter min="0" max="100" value="10" low="20" high="49"></meter> <br>
+
+
+
+      <progress></progress> <br>
+      <progress min="0" max="100" value="40"></progress>    <br>
+
+
+      <ruby>
+          饕 <rp><rt>tao</rt></rp>
+          餮 <rp><rt>tie</rt></rp>
+          饕 <rt>tao</rt>
+          餮 <rt>tie</rt>
+      </ruby> 
+
+      
+
+
+
+
+
+
+
+
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+</body>
+
+</html>

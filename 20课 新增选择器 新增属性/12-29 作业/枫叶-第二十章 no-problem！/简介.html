@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>简介</title>
+</head>
+    <style>
+        body,h3,p,ul{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .main{
+            height: 510px;
+            width: 580px;
+            margin: 0 auto 0;
+            overflow: hidden;
+        }
+        .main h3{
+            font-size: 25px;
+            margin: 5px 0 0 25px;
+            font-family: 华文中宋;
+            font-weight: bolder;
+        }
+        mark{
+            background-color: #ffd041;
+        }
+        .main p:first-of-type{
+            margin: 10px 0 0 25px;
+            font-weight: bold;
+            color: #b5b5b5;
+        }
+        .main p:last-of-type{
+            margin: 5px 0 0 25px;
+            font-size: 14px;
+            color: #a1a1a1;
+            text-indent: 2em;
+            line-height: 24px;
+            font-family: youyuan;
+        }
+        .main div::after{
+            content:"";
+            display: block;
+            clear: both;
+        }
+        .main div{
+            margin:80px 0 0 30px;
+            width: 450px;
+        }
+        meter{
+            float: left;
+            width: 300px;
+            height: 40px;
+            margin: 0px 0 10px 25px;
+        }
+        span{
+            float: left;
+            display: block;
+            line-height: 40px;
+            width: 100px;
+            background-color: black;
+            color: #a1a1a1;
+            text-align: center;
+        }
+        .main div ul{
+            margin:30px 0 0 25px;
+        }
+    </style>
+<body>
+    <div class="main">
+        <h3>Hello!I'm <mark>Lingjian Chen</mark></h3>
+        <p>Web developer</p>
+        <p>主攻前端和NodeJS开发 , 6年+前端开发经验 , 呆过大公司和小团队 , 从0组建20人前端NodeJS混合开发团队 , 带领团队利用最新技术解决业务快速发展过程中的各种业务场景问题 , 熟悉客户端开发 , 有多个上架的APP , 有java开发经验</p>
+        <div>
+            <h3>My Info</h3>
+            <ul>
+                <li><span>div+css</span><meter min="0" max="100" value="80" low="40" high="90"></meter></li>
+                <li><span>javscript</span><meter min="0" max="100" value="60" low="50" high="50"></meter></li>
+                <li><span>h5+css3</span><meter min="0" max="100" value="40" low="50" high="50"></meter></li>
+                <li><span>character</span><meter min="0" max="100" value="10" low="20" high="40"></meter></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

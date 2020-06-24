@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>菜单动画</title>
+    <style>
+        body,ul,h3,p{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+        h3{
+            font-weight: normal;
+        }
+        .wrapper{
+            margin-top: 100px;
+            border-top: 4px solid greenyellow;
+        }
+        .wrapper::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .wrapper ul li{
+            overflow: hidden;
+            position: relative;
+            float: left;
+            width: 270px;
+            height: 377px;
+            background-color: #00A0E9;
+            margin: 30px 27px 0;
+        }
+        .wrapper ul li:nth-child(1){
+            margin-left: 54px;
+        }
+        .wrapper ul li .list{
+            width: 270px;
+            height: 160px;
+            background: url("./images/bg_icon.png") no-repeat center center/100%;   
+        }
+        .wrapper ul li .pic{
+            position: absolute;
+            top: 0;
+            width: 270px;
+            height: 160px;
+            background: url("./images/html.png") no-repeat center center/37%;
+            transition: transform 1s;
+        }
+        .wrapper ul li:nth-child(2) .pic{
+            background: url("./images/demo.png") no-repeat center center/37%;
+        }
+        .wrapper ul li:nth-child(3) .pic{
+            background: url("./images/html5.png") no-repeat center center/37%;
+        }
+        .wrapper ul li:nth-child(4) .pic{
+            background: url("./images/js.png") no-repeat center center/37%;
+        }
+        .wrapper ul li .text{
+            height: 217px;
+            text-align: center;
+            margin-top: 60px;
+            transition: transform 2s;
+            text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+        }
+        .wrapper ul li .text h3{
+            font-size: 38px;
+        }
+        .wrapper ul li .text p{
+            font-size: 20px;
+            margin-top: 5px;
+        }
+        .wrapper ul li .text span{
+            display: block;
+            width: 110px;
+            line-height: 30px;
+            font-size: 20px;
+            margin: 10px 0 0 80px;
+            background-color: rgba(0,0,0,.2);
+        }
+        .wrapper ul li .content{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 270px;
+            height: 217px;
+            transition: transform 2s;
+            transform: translateX(400px);
+            text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+            background-color: rgba(0,0,0,.5);
+        }
+        .wrapper ul li .content div{
+            height: 70px;
+            border-left: 6px solid #fff;
+            margin: 20px 0 0 28px;
+            font-size: 30px;    
+        }
+        .wrapper ul li .content div h3{
+            font-weight: bold;
+            margin-left: 5px;
+        }
+        .wrapper ul li .content div p{
+            margin-left: 5px;
+        }
+        .wrapper ul li .content p{
+            margin-left: 28px;
+            font-size: 20px;
+        }
+        .wrapper ul li:hover .pic{
+            transform: rotateZ(360deg) scale(1.2);
+        }
+        .wrapper ul li:hover .list{
+            transform: scale(0);
+        }
+        .wrapper ul li:hover .text{
+            transform: translateY(500px);
+        }
+        .wrapper ul li:hover .content{
+            transform: translateX(0px);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <ul>
+            <li>
+                <a href="">
+                    <div class="list"></div>
+                    <div class="pic"></div>
+                    <div class="text">
+                        <h3>网页制作</h3>
+                        <p>HTML</p>
+                        <span>立即查看</span>
+                    </div>
+                    <div class="content">
+                        <div>
+                            <h3>网页制作</h3>
+                            <p>HTML</p>
+                        </div>
+                        <p>课程 : HTML+DIV+CSS<br />+项目实战,2个月一<br />期</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="list"></div>
+                    <div class="pic"></div>
+                    <div class="text">
+                        <h3>网页制作</h3>
+                        <p>HTML</p>
+                        <span>立即查看</span>
+                    </div>
+                    <div class="content">
+                        <div>
+                            <h3>网页制作</h3>
+                            <p>HTML</p>
+                        </div>
+                        <p>课程 : HTML+DIV+CSS<br />+项目实战,2个月一<br />期</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="list"></div>
+                    <div class="pic"></div>
+                    <div class="text">
+                        <h3>网页制作</h3>
+                        <p>HTML</p>
+                        <span>立即查看</span>
+                    </div>
+                    <div class="content">
+                        <div>
+                            <h3>网页制作</h3>
+                            <p>HTML</p>
+                        </div>
+                        <p>课程 : HTML+DIV+CSS<br />+项目实战,2个月一<br />期</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="list"></div>
+                    <div class="pic"></div>
+                    <div class="text">
+                        <h3>网页制作</h3>
+                        <p>HTML</p>
+                        <span>立即查看</span>
+                    </div>
+                    <div class="content">
+                        <div>
+                            <h3>网页制作</h3>
+                            <p>HTML</p>
+                        </div>
+                        <p>课程 : HTML+DIV+CSS<br />+项目实战,2个月一<br />期</p>   
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

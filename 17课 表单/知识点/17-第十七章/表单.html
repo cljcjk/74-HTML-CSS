@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+		<title>表单</title>
+		<meta name="keywords" content="关键词"/>
+		<meta name="description" content=""/>
+		<style>
+			.btn{margin-bottom:200px;}
+		</style>
+	</head>
+	<body>
+	<!--
+		<form>基本属性：
+			属性名：		值：			说明：
+			action			url路径			必须属性！规定当前提交表单时向何处发送表单数据
+			method			get/post		必须属性！规定用于发送form-date的http方法
+			name			自定义名称		规定表单的名称（针对服务器或脚本处理）
+					get/post:应用  get：会直接显示在地址栏后面，一般在测试立即传输一些数据并且对数据安全没有太多要求的时候用。  post：分段传输，后台解码之后有服务器规定如何传输数据，对安全有要求。
+	-->
+
+		<form action='.asp/.php' method='get/post' name='(对应后台表单的名称)'></form>
+
+
+	<!-- 表单应用技巧：
+				label：表单标记标签。 为表单控件提供辅助标记。点击<label>中的标记内容，浏览器就会自动将焦点转到和<label>相关的表单控件上。
+					使用方法：
+						1.使用<label>将标记内容和表单控件括在一起，增加控件可操作性。
+							<label>标记内容+表单控件</label>
+						2.使用<label>的 for 属性将其和相关控件关联到一起，for 属性的值为控件的id名。
+							<label for='对应表单元素的id名'>标记内容</label>
+								注：按钮控件应用的多，其他控件也可用。（以单选按钮为例）
+
+				fieldset:表单控件分组标签(块元素)。主要用于将表单内的相关控件进前分组，便于辨别和区分，默认会呈现区域边框效果。
+					legend：表单控件标题标签(块元素)。 用来为<fieldse>分组定义一个标题，作为表单内容的说明或描述。
+
+	-->
+
+
+	<!--
+		输入型控件：用户在控件中可以直接输入数据信息
+			input：创建表单控件；	type：定义表单控件的类型；
+			value：表单控件默认值；	onClick：点击文本框的时候value值为 空值 （onClick 脚本语言）
+
+			textarea：创建文本域；	双标签；无value值，标签区域的内容等于默认值；有默认样式，可通过CSS来修改（resize:none  禁止调整尺寸属性 CSS3新增）。rows 规定显示几行； cols:规定显示几列。
+	-->
+
+	<!-- 表单常用属性总结：
+		placeholder：占位符属性；规定可描述输入字段期值的尖端提示，来提示用户输入。输入框显示placeholder的文本内容，在用户输入时自动消失，不				会形成干扰。应用对象针对输入型表单控件，如<input>的text类型或<textarea>。（H5 新增IE9及以下不支持）
+					特点：textarea内容不是value值，也不会被表单提交。  （H5新增 IE9以下不支持）
+		readonly：只读属性（布尔值）；规定出入字段为‘只读’，不能修改。应用对象主要针对输入框类型控件。
+		disabled：禁用属性（布尔值）；规定输入字段为‘禁用’，无法使用。应用对象包括所有表单控件，除了<input type='hidden'>。
+					特点：提交表单控件时，被禁用的控件不会被提交。  （H5新增）
+		required：必填属性（布尔值）；规定必需在提交之前填写输入字段。应用对象适用于下面的
+		input类型：text、search、URL、email、password、date、pickers、number、checkbox、radio和file以及<textarea>文本域。 （H5新增，IE9及以下不支持）
+					注：当输入框设置value值时，且不用脚本控制，这时required无效。 而placeholder不会产生影响。
+		autofocus：自动获得焦点属性（布尔值）；规定当页面加载时<input>元素自动获得焦点。应用对象针对大多数表单控件，都可以用。
+					（H5新增，IE9及以下不支持）
+		autocomplete：自动完成属性。规定表单是否启用自动完成功能，即是否让浏览器自动记录之前输入的值。 可应用于正题的<form>对象，也可用于输入					型<input>控件。
+					特点：值on（开启）；off（关闭）。通常，autocomplete=‘on’ 适用于表单（默认），‘off’适用于特定色输入字段。     (H5 新增)
+					注：name的值于form里面name的值相同，否则不会保存，即autocomplete无效。
+	-->
+		<form action='#' method='post' name='user_name'>
+			<fieldset>
+				<legend>通用输入型控件</legend>
+				普通文本框:<input type='text' name='text' value=' 666' onClick='this.value=""' />    <br/>
+				普通文本框:<input type='text' name='text' placeholder=' 666'/>    <br/>
+				普通文本框:<input type='text' name='text' value='只读显示' readonly />				<br/>
+				普通文本框:<input type='text' name='text' value='只读显示（不会被提交）' disabled />				<br/>
+				密码文本框:<input type='password' required />											<br/>
+				隐藏域:<input type='hidden' />
+					<!-- 隐藏域是用户看不到的表单控件，一般用来传递不需要显示在客户端的数据。 例：百度搜索首页-->
+				文本域: <textarea rows='' cols='' autofocus>
+
+							</textarea>
+							<br/><br/>
+
+				普通文本框:<input type='text' name='user_name' autocomplete='on' /><br/>
+				普通文本框1:<input type='text' name='user_name' autocomplete='on' /><br/>
+				密码文本框:<input type='password' name='user_name' autocomplete='off' /><br/>
+			</fieldset>
+
+
+
+			<!-- ============================================================================== -->
+
+
+
+
+			<fieldset>
+				<legend>H5新增输入型表单控件</legend>
+				<!-- HTML5新增的表单控件-->
+					<!-- 赋予input更具体的“语义”，同时提供更好的输入控件和浏览器原生验证（不需附加脚本）-->
+
+				网址:<input type='url' name='url' /> <!-- 创建包含URL地址的输入框，提交时验证--><br/>
+				邮箱:<input type='email' name='email' /> <!-- 创建包含email地址的输入框，提交时验证--><br/>
+				数字:<input type='number' name='number' min='0' max='100' step='4' /> <!-- 创建仅包含数值的驶入框，可具体设置--><br/>
+						<!-- min:最小值   max:最大值   step:递增间隔	-->
+				数字范围:<input type='range' name='range' min='' max='' step='' /> <!-- 创建滑动条，呈现数值范围区域，可具体设定--><br/>
+				时间选择器:<input type='date' name='date' /> <!-- 创建时间选择器，type类型有date、month、week、time等--><br/>
+				色彩拾取器:<input type='color' name='color' /> <!-- 创建色彩拾取器，用于可点选颜色--><br/>
+				搜索:<input type='search' name='search' /> <!-- 创建有清除内容（X）功能输入框--><br/>
+				电话:<input type='tel' name='tel' /> <!-- 创建具有电话号码规则的输入框--><br/>
+
+				<input type='submit'>
+			</fieldset>
+		</form> <br/>
+
+
+
+		<!-- ============================================================================== -->
+
+
+	<!--
+		选择型控件：用户根据提供的控件选择数据内容
+			单选按钮：必须成组出现。 当若干个单选按钮的name值相同时，形成按钮组，同时具有互斥性。
+
+			复选按钮：可单个使用，可成组使用。 当若干个单选按钮的name值相同时，形成按钮组。
+				checked：设定按钮的选中状态。
+
+			下拉列表： selected：选中状态（option属性）； multiple：可选多个选项（select属性，H5新增属性）、
+					   size：可见选项数目（select属性，配合multiple使用，H5新增）
+					   optgroup：给列表中的选项进行分组，形成类似树形的选中控件，label属性用于定义选项组的文本描述。（H5新增）
+	-->
+
+		<form action='#' method='post' name='(对应后台表单的名称)'>
+			<fieldset>
+				<legend>通用选择型控件</legend>
+				<!-- 单选按钮-->
+
+				单选按钮:<label> <input type='radio' name='user' value='0000' checked>0000 </label> &nbsp;&nbsp;&nbsp;
+						 <input type='radio' name='user' value='1123' id='d4'><label for='d4'>1123</label>  <br/>
+				<!-- 复选按钮-->
+
+				复选按钮:<input type='checkbox' name='user-' value='0'>0 &nbsp;&nbsp;&nbsp; <input type='checkbox' name='user-' value='2'>1  &nbsp;&nbsp;&nbsp;
+				<input type='checkbox' name='user-' value='3'>3 &nbsp;&nbsp;&nbsp; <input type='checkbox' name='user-' value='4' checked>4 <br/>
+
+				<!-- 下拉列表-->
+
+				下拉列表:<select size='1'>
+							<option>请选择省份</option>
+							
+							<optgroup label='华中地区'>
+								<option value='HuNAn'>湖南</option>
+								<option value='HuBei'>湖北</option>
+							</optgroup>
+							<optgroup label='华南地区'>
+								<option value='GuangDong'>广东</option>
+								<option value='GuangXi'>广西</option>
+							</optgroup>
+							<option value='ShanDong'>山东</option>
+							<option value='ShanXi'>山西</option>
+							<option value='XinJiang'>新疆</option>
+							<option value='XiZang'>西藏</option>
+							<option value='HaiNan' selected>海南</option>
+						</select>																		<br/>
+			</fieldset>
+
+
+
+			<!-- ============================================================================== -->
+
+
+
+			<fieldset>
+				<legend>H5新增选择型表单控件</legend>
+				<!-- HTML5新增的表单控件-->
+				<!--
+					用来预先定义一个输入潜在选项，为输入提供一个可选择的提示列表，用户输入数据时，可以直接选择提至列表。
+					datalist: 创建列表区，默认不会显示。
+							datalist作为输入提示，实际应用中需要和input输入框搭配使用； 使用input的list属性来引用datalist的id值.
+
+					缺陷：无法使用CSS进行UI设计和样式定义，部分浏览器不支持或支持度不好，且不同浏览器对datalist的属性或值判断不同，及时使用datalist，也需要配合脚本来实现和完善。
+					建议：现阶段使用传统方法，利用脚本来实现。
+				-->
+				选择浏览器:<input type='text' list='browsers'>
+							<datalist id='browsers'>
+								<option value='Internet Explorer'>IE</option>
+								<option value='Firefox' label='top2'>火狐</option>
+								<option value='Chrome' label='top1'>谷歌</option>
+								<option>Opera</option>
+								<option value='Safari'>苹果</option>
+							</datalist>
+
+				<br/><input type='submit'>
+			</fieldset>
+		</form>
+
+
+
+	<!-- ============================================================================== -->
+
+
+
+
+	<!--
+		事件型控件：用户点击控件的事件
+				每个表单都应该有一个提交按钮来实现表单的发送；按钮上的文本用value属性来定义。
+
+					multiple：多选 （H5新增）
+	-->
+
+		
+
+		<form action='#' method='post' name='(对应后台表单的名称)'>
+			<fieldset class='btn'>
+				<legend>通用事件型控件</legend>
+				普通按钮:<input type='button' >	  <!-- 定义可点击按钮（多数情况下课通过JavaScript启动脚本）--><br/>
+				提交按钮:<input type='submit' >	  <!--点击按钮会把表单所有数据发送到服务器 --><br/>
+				重置按钮:<input type='reset' >	  <!-- 点击按钮会重置表单中的所有数据（恢复成出事默认）--><br/>
+				图像按钮:<input type='image' src='' alt='文本替换'>	  <!-- 用自定义图像来呈现提交按钮--><br/>
+				上传按钮:<input type='file' multiple>	  <!-- 点击按钮选择本机文件，用于文件上传--><br/>
+			</fieldset>
+		<!-- 按钮控件：button-->
+
+
+
+
+		</form>
+	</body>
+</html>

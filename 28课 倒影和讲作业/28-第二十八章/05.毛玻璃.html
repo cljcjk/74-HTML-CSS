@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            background: url(https://ss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy/image/h%3D220/sign=2c2d00eedb1b0ef473e89f5cedc651a1/f9198618367adab4c202538382d4b31c8601e424.jpg) no-repeat 0/100% 100%;
+        }
+        div{
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            margin: auto;
+            width: 600px;
+            height: 324px;
+            padding: 50px 60px;
+            font-size: 14px;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, .3);
+            box-shadow: 4px 4px 5px 1px rgba(0, 0, 0, .1),
+                        0 0 1px 1px rgba(255, 255, 255, .2) inset;
+        }
+
+        div::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            background: url(https://ss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy/image/h%3D220/sign=2c2d00eedb1b0ef473e89f5cedc651a1/f9198618367adab4c202538382d4b31c8601e424.jpg) no-repeat 0/100% 100%;
+
+             filter: blur(20px)
+        }
+
+        p{
+            text-indent: 2em;
+            line-height: 24px;
+            font-family: "楷体";
+            text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+        }
+
+        p:nth-child(2){
+            margin-top: 40px;
+            text-align: right;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    
+    </style>
+</head>
+<body>
+    <div>
+        <p>当我年轻的时候，我梦想改变这个世界；当我成熟以后，我发现我不能够改变这个世界，我将目光缩短了些，决定只改变我的国家；当我进入暮年以后，我发现我不能够改变我们的国家，我的最后愿望仅仅是改变一下我的家庭，但是，这也不可能。当我现在躺在床上，行将就木时，我突然意识到：如果一开始我仅仅去改变我自己，然后，我可能改变我的家庭；在家人的帮助和鼓励下，我可能为国家做一些事情；然后，谁知道呢?我甚至可能改变这个世界。</p>
+        <p>— 英国威斯敏斯特教堂的地下室里一块墓碑的一句话</p>
+    </div>
+</body>
+</html>

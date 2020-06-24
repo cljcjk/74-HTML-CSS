@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>导航</title>
+    <style>
+        body,ul,p{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: #797676;
+        }
+        ul{
+            list-style: none;
+        }
+        .nav{
+            width: 512px;
+            margin: 200px auto 0;
+            position: relative;
+        }
+        .nav::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .nav ul li{ 
+            float: left;
+            width: 100px;
+            height: 140px;
+            border-left: 2px solid black;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            text-align: center;
+        }
+        .nav ul li img{
+            margin-top: 20px;
+            transform: scale(1.5);
+        }
+        .nav ul li p{
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #49474c;
+        }
+        .nav ul li:nth-child(5){
+            border-right: 2px solid black;
+        }
+        .wrapper{
+            position: absolute;
+            top: 0px;
+            left: 2px;
+            width: 100px;
+            height: 140px;
+            background-color: rgba(255, 255, 255, 1);
+            z-index: -1;
+            transition: 1s;    
+        }
+        .wrapper::before{
+            content: "";
+            position:absolute;
+            top: -18px;
+            left: 0px; 
+            border: 50px solid rgba(255, 255, 255, 1);
+            border-top: 20px solid #b2adad;
+        }
+        .wrapper::after{
+            content: "";
+            position:absolute;
+            top: 92px; 
+            left: 0px;
+            border: 50px solid rgba(255, 255, 255, 1);
+            border-bottom: 20px solid #b2adad;
+        }
+        .nav ul li:nth-child(2):hover ~.wrapper{
+            transform: translateX(102px);
+        }
+        .nav ul li:nth-child(3):hover ~.wrapper{
+            transform: translateX(204px);
+        }
+        .nav ul li:nth-child(4):hover ~.wrapper{
+            transform: translateX(306px);
+        }
+        .nav ul li:nth-child(5):hover ~.wrapper{
+            transform: translateX(408px);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>
+                <img src="images/html.png">
+                <p>html</p>
+            </li>
+            <li>
+                <img src="images/html1.png">
+                <p>html</p>
+            </li>
+            <li>
+                <img src="images/html2.png">
+                <p>html</p>
+            </li>
+            <li>
+                <img src="images/html3.png">
+                <p>html</p>
+            </li>
+            <li>
+                <img src="images/html4.png">
+                <p>html</p>
+            </li>
+            <div class="wrapper"></div>
+        </ul>
+    </div> 
+</body>
+</html>

@@ -1,0 +1,72 @@
+body,h3{margin: 0; padding: 0;}
+.wrapper{
+    width: 650px;
+    height: 800px;
+    margin: 10px auto 0; 
+    background-color: #515151;
+    overflow: hidden;
+    color: #fff;
+    font-size: 14px;
+}
+form{
+    width: 582px;
+    margin: auto;
+}
+h3{
+    color: #fff;
+    margin: 20px 0; 
+    font-size: 25px;
+    text-align: center;
+}
+table{
+    border-spacing: 15px 25px;
+}
+.form1 input{
+    width: 179px;
+}
+
+.form2{
+    margin-top: 20px;
+}
+.form2 tr td{
+    height: 20px;
+}
+.form2 input{
+    width: 172px;
+}
+.form2 select{
+    width: 200px;
+}
+.form2 input[type="checkbox"]{
+    width: 15px;
+    height: 10px;
+}
+.form2 input[type="radio"]{
+    width: 15px;
+    height: 10px;
+}
+.form2 input{
+    margin: 0;
+}
+span{
+    margin-top: 0px;
+}
+.form3{
+    margin-top: 20px;
+}
+.form3 input[type="text"]{
+    width: 426px;
+}
+.form3 input[type="number"]{
+    width: 50px;
+}
+.form3 input[type="date"]{
+    width: 141px;
+}
+.contain{
+    text-align: center;
+    margin-top: 20px;
+}
+div input[type="file"]{
+    width: 167px;
+}

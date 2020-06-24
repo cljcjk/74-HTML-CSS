@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+        .wrap{
+            /* position: relative; */
+            width: 200px;
+            height: 200px;
+            margin: 100px auto 0;
+            border: 2px solid #000;
+        }
+        .wrap .box{
+            /* position: absolute;
+            left: 0;
+            top: -200px; */
+            width: 200px;
+            height: 200px;
+            background: url(./images/4.jpg) no-repeat 0/200px 200px;
+
+            transition: transform 1s;
+            /* transform: rotate(45deg) translate(0, -200px); */
+        }
+
+        .wrap:hover .box{
+            /* transform: translate(100px, 100px); */
+            /* transform: rotate(720deg);
+            transform-origin: 0 bottom; */
+
+            /* transform: scale(.8);
+            transform-origin: 0 bottom;  */
+
+
+            /* transform: translate(250px, 0) rotate(360deg) scale(.8); */
+            /* transform: rotate(360deg) translate(250px, 0) scale(.8); */
+
+            /* transform: rotate(45deg) */
+
+            /* transform: matrix( 1, 0, 0, 1, -100, -100 ); */
+            
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
